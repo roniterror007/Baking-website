@@ -51,3 +51,9 @@ html[data-theme=light] .film-caption{color:#fff9ed}
 @media(max-width:380px){.journey-copy h1,.journey-copy h2{font-size:36px;letter-spacing:-1.8px}.journey-copy h1 em,.journey-copy h2 em{font-size:1.28em;letter-spacing:-1.8px}.journey-copy .eyebrow{font-size:6px;letter-spacing:1.3px}.journey-copy p{font-size:9px}.journey-visual{top:315px}.film-caption>strong{font-size:20px}}
 @media(max-width:700px) and (max-height:650px){.journey-screen{height:770px}.journey-layout{height:710px}.journey-visual{inset:320px 0 60px;height:auto}.journey-copy{height:285px}.journey-bottom{margin-top:0}}
 html[data-theme=light] .film-caption{color:var(--ink);text-shadow:0 1px 5px #fff8}
+
+/* SVG decoration prevents iOS from substituting a large coloured emoji. */
+.invite-star{width:230px;height:230px;z-index:0}.last-invite h2,.last-invite .eyebrow,.last-invite .button-primary{position:relative;z-index:1}
+@media(max-width:700px){.invite-star{display:none}.last-invite h2{font-size:clamp(38px,10vw,54px);overflow-wrap:normal}.last-invite h2 em{display:block}}
+
+@media(max-width:700px){.story-section{grid-template-columns:minmax(0,1fr)}.story-copy{min-width:0}.story-copy h2{font-size:clamp(36px,10.6vw,47px);overflow-wrap:anywhere}.story-seal{right:0;transform:none}.story-copy p{max-width:100%}}

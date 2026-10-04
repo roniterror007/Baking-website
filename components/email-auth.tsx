@@ -2,6 +2,7 @@
 import { useState, type FormEvent } from "react";
 import Link from "next/link";
 import { createBrowserClient } from "@supabase/ssr";
+import { authErrorMessage } from "@/lib/auth-errors";
 import { safeReturnPath } from "@/lib/auth-paths";
 import "./email-auth.css";
 
@@ -24,16 +25,16 @@ export default function EmailAuth({ returnTo = "/", signOut = false, expired = f
         redirect.searchParams.set("next", safeReturnPath(returnTo));
         if (mode === "login") {
           const { error: failure } = await client.auth.signInWithPassword({ email: email.trim(), password });
-          if (failure) throw new Error("Unable to sign in. Check your details and confirm your email, or use an email link.");
+          if (failure) throw new Error(authErrorMessage(failure, "login"));
           setPassword(""); window.location.assign(safeReturnPath(returnTo));
         } else if (mode === "register") {
           const { data, error: failure } = await client.auth.signUp({ email: email.trim(), password, options: { emailRedirectTo: redirect.toString() } });
-          if (failure) throw new Error("Unable to create an account. Use a stronger password or try again shortly.");
+          if (failure) throw new Error(authErrorMessage(failure, "register"));
           setPassword("");
           if (data.session) window.location.assign(safeReturnPath(returnTo)); else setSent(true);
         } else {
           const { error: failure } = await client.auth.signInWithOtp({ email: email.trim(), options: { emailRedirectTo: redirect.toString(), shouldCreateUser: false } });
-          if (failure) throw new Error("Unable to send a sign-in link. Create an account first, or try again shortly.");
+          if (failure) throw new Error(authErrorMessage(failure, "link"));
           setSent(true);
         }
       }
@@ -43,7 +44,7 @@ export default function EmailAuth({ returnTo = "/", signOut = false, expired = f
   return <main className="gd-auth"><Link className="gd-auth-brand" href="/">GOLDEN<br/>DELIGHTS</Link><div className="gd-auth-card">
     <p className="gd-auth-eyebrow">Your own little corner</p>
     <h1>{signOut ? "Until next time." : sent ? "A little joy, in your inbox." : "Welcome to Golden Delights."}</h1>
-    <p>{signOut ? "Sign out of this device. Your saved addresses and orders will be here when you return." : sent ? "Open the sign-in link we sent to your email in this browser. If it doesn't arrive, check your spam folder." : "Create your account or sign in securely. Save your delivery details and follow every sweet celebration."}</p>
+    <p>{signOut ? "Sign out of this device. Your saved addresses and orders will be here when you return." : sent ? "Open the confirmation or sign-in link in this browser. Check your spam folder too. If you already have an account, sign in instead." : "Create your account or sign in securely. Save your delivery details and follow every sweet celebration."}</p>
     {!configured && !signOut && <p role="alert" className="gd-auth-error">Account sign-in is being configured. Please check back shortly.</p>}
     {error && <p role="alert" className="gd-auth-error">{error}</p>}
     {!signOut && !sent && <div className="gd-auth-tabs" aria-label="Account access">{(["login", "register", "link"] as const).map(value => <button type="button" key={value} aria-pressed={mode === value} onClick={() => { setMode(value); setPassword(""); setError(""); }}>{value === "login" ? "Sign in" : value === "register" ? "Create account" : "Email link"}</button>)}</div>}

@@ -72,8 +72,10 @@ export function json(data: unknown, status = 200): Response {
 export function route(fn: () => Promise<Response>): Promise<Response> {
   return fn().catch((error: unknown) => {
     if (error instanceof ApiError) return json({ error: error.code, message: error.message, ...error.detail }, error.status);
-    console.error("Bakery API request failed", error instanceof Error ? error.message : "unknown");
-    return json({ error: "service_unavailable", message: "We couldn't complete this request. Please try again shortly." }, 503);
+    const code = typeof error === "object" && error !== null && "code" in error && typeof error.code === "string" ? error.code : "";
+    const reference = /^[A-Z0-9_]{2,50}$/.test(code) ? code : undefined;
+    console.error("Bakery API request failed", { code: reference, message: error instanceof Error ? error.message : "unknown" });
+    return json({ error: "service_unavailable", reference, message: "We couldn't complete this request. Please try again shortly." }, 503);
   });
 }
 
