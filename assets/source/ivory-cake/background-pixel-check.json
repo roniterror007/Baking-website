@@ -1,0 +1,340 @@
+{
+  "checkedAt": "2026-10-04T01:15:34.680Z",
+  "sample": "Exact top-left RGB pixel (0,0), decoded without rescaling. Native exported PNG compared with all three complete-frame WebP variants.",
+  "sourceFrames": [
+    0,
+    45,
+    89
+  ],
+  "lossyEncoding": {
+    "format": "WebP",
+    "quality": 85,
+    "effort": 5
+  },
+  "rows": [
+    {
+      "theme": "dark",
+      "index": 0,
+      "nativeRgb": [
+        24,
+        17,
+        14
+      ],
+      "nativeHex": "#18110e",
+      "variants": [
+        {
+          "width": 1280,
+          "rgb": [
+            22,
+            18,
+            15
+          ],
+          "hex": "#16120f",
+          "channelDeltaFromNative": [
+            -2,
+            1,
+            1
+          ]
+        },
+        {
+          "width": 2560,
+          "rgb": [
+            27,
+            15,
+            15
+          ],
+          "hex": "#1b0f0f",
+          "channelDeltaFromNative": [
+            3,
+            -2,
+            1
+          ]
+        },
+        {
+          "width": 3840,
+          "rgb": [
+            27,
+            15,
+            15
+          ],
+          "hex": "#1b0f0f",
+          "channelDeltaFromNative": [
+            3,
+            -2,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "index": 45,
+      "nativeRgb": [
+        24,
+        17,
+        14
+      ],
+      "nativeHex": "#18110e",
+      "variants": [
+        {
+          "width": 1280,
+          "rgb": [
+            22,
+            18,
+            15
+          ],
+          "hex": "#16120f",
+          "channelDeltaFromNative": [
+            -2,
+            1,
+            1
+          ]
+        },
+        {
+          "width": 2560,
+          "rgb": [
+            27,
+            15,
+            15
+          ],
+          "hex": "#1b0f0f",
+          "channelDeltaFromNative": [
+            3,
+            -2,
+            1
+          ]
+        },
+        {
+          "width": 3840,
+          "rgb": [
+            27,
+            15,
+            15
+          ],
+          "hex": "#1b0f0f",
+          "channelDeltaFromNative": [
+            3,
+            -2,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "index": 89,
+      "nativeRgb": [
+        24,
+        17,
+        14
+      ],
+      "nativeHex": "#18110e",
+      "variants": [
+        {
+          "width": 1280,
+          "rgb": [
+            22,
+            18,
+            15
+          ],
+          "hex": "#16120f",
+          "channelDeltaFromNative": [
+            -2,
+            1,
+            1
+          ]
+        },
+        {
+          "width": 2560,
+          "rgb": [
+            27,
+            15,
+            15
+          ],
+          "hex": "#1b0f0f",
+          "channelDeltaFromNative": [
+            3,
+            -2,
+            1
+          ]
+        },
+        {
+          "width": 3840,
+          "rgb": [
+            22,
+            18,
+            15
+          ],
+          "hex": "#16120f",
+          "channelDeltaFromNative": [
+            -2,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "index": 0,
+      "nativeRgb": [
+        247,
+        242,
+        233
+      ],
+      "nativeHex": "#f7f2e9",
+      "variants": [
+        {
+          "width": 1280,
+          "rgb": [
+            247,
+            242,
+            232
+          ],
+          "hex": "#f7f2e8",
+          "channelDeltaFromNative": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "width": 2560,
+          "rgb": [
+            250,
+            240,
+            234
+          ],
+          "hex": "#faf0ea",
+          "channelDeltaFromNative": [
+            3,
+            -2,
+            1
+          ]
+        },
+        {
+          "width": 3840,
+          "rgb": [
+            250,
+            240,
+            234
+          ],
+          "hex": "#faf0ea",
+          "channelDeltaFromNative": [
+            3,
+            -2,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "index": 45,
+      "nativeRgb": [
+        247,
+        242,
+        233
+      ],
+      "nativeHex": "#f7f2e9",
+      "variants": [
+        {
+          "width": 1280,
+          "rgb": [
+            247,
+            242,
+            232
+          ],
+          "hex": "#f7f2e8",
+          "channelDeltaFromNative": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "width": 2560,
+          "rgb": [
+            250,
+            240,
+            234
+          ],
+          "hex": "#faf0ea",
+          "channelDeltaFromNative": [
+            3,
+            -2,
+            1
+          ]
+        },
+        {
+          "width": 3840,
+          "rgb": [
+            250,
+            240,
+            234
+          ],
+          "hex": "#faf0ea",
+          "channelDeltaFromNative": [
+            3,
+            -2,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "index": 89,
+      "nativeRgb": [
+        247,
+        242,
+        233
+      ],
+      "nativeHex": "#f7f2e9",
+      "variants": [
+        {
+          "width": 1280,
+          "rgb": [
+            247,
+            242,
+            232
+          ],
+          "hex": "#f7f2e8",
+          "channelDeltaFromNative": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "width": 2560,
+          "rgb": [
+            247,
+            242,
+            232
+          ],
+          "hex": "#f7f2e8",
+          "channelDeltaFromNative": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "width": 3840,
+          "rgb": [
+            245,
+            243,
+            232
+          ],
+          "hex": "#f5f3e8",
+          "channelDeltaFromNative": [
+            -2,
+            1,
+            -1
+          ]
+        }
+      ]
+    }
+  ]
+}

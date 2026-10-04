@@ -1,0 +1,25 @@
+{
+  "index": 7,
+  "progress": 0.07865168539325842,
+  "theme": "dark",
+  "width": 3840,
+  "height": 2160,
+  "camera": {
+    "position": [
+      -0.24192277272724447,
+      -1.378625022583933,
+      0.6464342436536368
+    ],
+    "target": [
+      0.002775528,
+      0.2,
+      0.065
+    ],
+    "radius": 1.7,
+    "elevationDegrees": 20,
+    "azimuthDegrees": -10.112359550561798,
+    "detail": 0
+  },
+  "forcedBufferResize": false,
+  "model": "69be5c0c0d404113a227d9ba19d78447"
+}

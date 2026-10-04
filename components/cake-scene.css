@@ -1,0 +1,12 @@
+.cake-scene{position:relative;width:100%;height:100%;min-height:0;isolation:isolate;overflow:hidden;contain:layout paint}
+.cake-sequence-scene{--gd-scene-bg:#18110e;background-color:var(--gd-render-bg,var(--gd-scene-bg))!important}
+.cake-sequence-scene[data-scene-theme=light]{--gd-scene-bg:#f7f2e9}
+.cake-sequence-poster{position:absolute;top:-7.5%;left:50%;height:115%;width:auto!important;max-width:none;display:block;transform:translateX(-50%);pointer-events:none;z-index:0}
+.cake-sequence-canvas{position:absolute;inset:0;display:block;width:100%;height:100%;opacity:0;pointer-events:none;touch-action:pan-y;z-index:1}
+.cake-sequence-scene.is-ready .cake-sequence-canvas[data-painted=true]{opacity:1}
+.cake-sequence-scene.is-ready .cake-sequence-canvas[data-painted=true]+.cake-sequence-poster{visibility:hidden}
+.cake-sequence-status{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:14px;color:var(--muted,#b9a998);text-align:center;pointer-events:none}
+.cake-sequence-status>span{font:italic clamp(24px,4vw,48px) var(--serif,Georgia,serif);color:var(--accent,#caa779)}
+.cake-sequence-status>small{font-size:10px;letter-spacing:.04em}
+.cake-sequence-pause{position:absolute;right:12px;bottom:0;min-height:44px;min-width:44px;padding:7px 10px;font-size:8px;letter-spacing:.04em;color:var(--muted,#b9a998);background:transparent;opacity:.7;cursor:pointer;z-index:2}
+.cake-sequence-pause:hover,.cake-sequence-pause:focus-visible{opacity:1;color:var(--ink,#f4eadb)}

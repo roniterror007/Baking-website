@@ -1,0 +1,5 @@
+.gd-product-visual { position: relative; display: block; overflow: hidden; aspect-ratio: 3 / 2; background: #ddd3c5; }
+.gd-product-visual[data-variant="detail"] { aspect-ratio: 1; }
+.gd-product-visual-atlas, .gd-product-visual-full { display: block; width: 100%; height: 100%; }
+.gd-product-visual-atlas { position: absolute; inset: 0; }
+.gd-product-visual-full { object-fit: cover; }

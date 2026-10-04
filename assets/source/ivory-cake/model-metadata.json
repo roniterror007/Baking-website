@@ -1,0 +1,167 @@
+{
+  "animationCount": 0,
+  "categories": [
+    {
+      "uid": "b3631aefd82b4eeba37aa5fc0b73b05a",
+      "name": "Food & Drink",
+      "slug": "food-drink",
+      "uri": "https://api.sketchfab.com/v3/categories/b3631aefd82b4eeba37aa5fc0b73b05a",
+      "icon": "https://static.sketchfab.com/static/builds/web/dist/static/assets/images/icons/categories/dac08ea5b8779b2cef7a4c81327df721-v2.svg",
+      "thumbnails": [
+        {
+          "width": "512",
+          "height": "288",
+          "url": "https://static.sketchfab.com/categories/b3631aefd82b4eeba37aa5fc0b73b05a/512x288.png"
+        },
+        {
+          "width": "800",
+          "height": "450",
+          "url": "https://static.sketchfab.com/categories/b3631aefd82b4eeba37aa5fc0b73b05a/800x450.png"
+        }
+      ]
+    }
+  ],
+  "commentCount": 1,
+  "createdAt": "2023-05-26T13:38:31.201626",
+  "embedUrl": "https://sketchfab.com/models/69be5c0c0d404113a227d9ba19d78447/embed",
+  "faceCount": 280874,
+  "isAgeRestricted": false,
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution",
+    "requirements": "Author must be credited. Commercial use is allowed.",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "slug": "by"
+  },
+  "likeCount": 56,
+  "name": "Wedding Cake",
+  "publishedAt": "2023-05-26T14:24:11.721258",
+  "soundCount": 0,
+  "staffpickedAt": null,
+  "tags": [
+    {
+      "name": "cake",
+      "slug": "cake",
+      "uri": "https://api.sketchfab.com/v3/tags/cake"
+    },
+    {
+      "name": "sweets",
+      "slug": "sweets",
+      "uri": "https://api.sketchfab.com/v3/tags/sweets"
+    },
+    {
+      "name": "blender",
+      "slug": "blender",
+      "uri": "https://api.sketchfab.com/v3/tags/blender"
+    },
+    {
+      "name": "blender3d",
+      "slug": "blender3d",
+      "uri": "https://api.sketchfab.com/v3/tags/blender3d"
+    },
+    {
+      "name": "sketchfabweeklychallenge2023",
+      "slug": "sketchfabweeklychallenge2023",
+      "uri": "https://api.sketchfab.com/v3/tags/sketchfabweeklychallenge2023"
+    }
+  ],
+  "thumbnails": {
+    "images": [
+      {
+        "uid": "68326528f5b04243a20c09a2f409d779",
+        "width": 1920,
+        "height": 1080,
+        "size": 98863,
+        "url": "https://media.sketchfab.com/models/69be5c0c0d404113a227d9ba19d78447/thumbnails/cfbf5bb5bb86496d9a5214d092abc2e7/819ba024c0134bcc8af7cc934051df49.jpeg"
+      },
+      {
+        "uid": "8b2bcf491c264e31a040eb651683bcf2",
+        "width": 1024,
+        "height": 576,
+        "size": 31142,
+        "url": "https://media.sketchfab.com/models/69be5c0c0d404113a227d9ba19d78447/thumbnails/cfbf5bb5bb86496d9a5214d092abc2e7/3ef306c2b44b419ea6e9576403fd3950.jpeg"
+      },
+      {
+        "uid": "bdb1febd157d4f82a916ca3b9aea9f42",
+        "width": 720,
+        "height": 405,
+        "size": 18268,
+        "url": "https://media.sketchfab.com/models/69be5c0c0d404113a227d9ba19d78447/thumbnails/cfbf5bb5bb86496d9a5214d092abc2e7/4cac1bd6d0aa42209e82dd3224921933.jpeg"
+      },
+      {
+        "uid": "86acd20a50e04bcea72322b84624d3e4",
+        "width": 256,
+        "height": 144,
+        "size": 4043,
+        "url": "https://media.sketchfab.com/models/69be5c0c0d404113a227d9ba19d78447/thumbnails/cfbf5bb5bb86496d9a5214d092abc2e7/18f75335d1d74db88de822c8ddbb2ac5.jpeg"
+      },
+      {
+        "uid": "d82abea27144471794c2c95a81fab023",
+        "width": 64,
+        "height": 36,
+        "size": 1061,
+        "url": "https://media.sketchfab.com/models/69be5c0c0d404113a227d9ba19d78447/thumbnails/cfbf5bb5bb86496d9a5214d092abc2e7/5b55e84cab79479ebb69fa2f45f4e3ec.jpeg"
+      }
+    ]
+  },
+  "uid": "69be5c0c0d404113a227d9ba19d78447",
+  "uri": "https://api.sketchfab.com/v3/models/69be5c0c0d404113a227d9ba19d78447",
+  "user": {
+    "uid": "efddd25805a340478737bc2052ee12e2",
+    "username": "Mekokishvili",
+    "displayName": "Mekokishvili",
+    "account": "basic",
+    "profileUrl": "https://sketchfab.com/Mekokishvili",
+    "avatar": {
+      "uid": "51af6a870cce449eb75b0345feebaebb",
+      "uri": "https://api.sketchfab.com/v3/avatars/51af6a870cce449eb75b0345feebaebb",
+      "images": [
+        {
+          "width": 90,
+          "height": 90,
+          "size": 5719,
+          "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/2ef0f894055b4bb69123b2a27fa2d379.jpeg"
+        },
+        {
+          "width": 100,
+          "height": 100,
+          "size": 6496,
+          "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/ab11eedf96374486acb544f71a23b165.jpeg"
+        },
+        {
+          "width": 32,
+          "height": 32,
+          "size": 1359,
+          "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/35f6f9b6c9a14a548ce472582d8a9bb5.jpeg"
+        },
+        {
+          "width": 48,
+          "height": 48,
+          "size": 2584,
+          "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/a8072a51447c4d41ab177b357111b420.jpeg"
+        }
+      ]
+    },
+    "uri": "https://api.sketchfab.com/v3/users/efddd25805a340478737bc2052ee12e2"
+  },
+  "vertexCount": 140260,
+  "viewCount": 3045,
+  "viewerUrl": "https://sketchfab.com/3d-models/wedding-cake-69be5c0c0d404113a227d9ba19d78447",
+  "isDownloadable": true,
+  "isProtected": false,
+  "description": "For the Sketchfab Weekly Challenge 2023 - week 20 - \"Sweets\".\n\nSmall wedding cake Hope you’ll like it.\n\nMade in Blender.",
+  "price": null,
+  "downloadCount": 1019,
+  "editorUrl": "https://sketchfab.com/models/69be5c0c0d404113a227d9ba19d78447/edit",
+  "status": {
+    "warning": {},
+    "processing": "SUCCEEDED"
+  },
+  "source": "website",
+  "hasCommentsDisabled": false,
+  "updatedAt": "2023-05-28T01:07:41.614204",
+  "pbrType": null,
+  "textureCount": 11,
+  "materialCount": 13
+}

@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Golden Delights — ivory cake inspection</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, sans-serif; background: #18110e; color: #f7f2e9; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main { display: grid; grid-template-columns: minmax(0, 1fr) 380px; min-height: 100svh; }
+    .stage { position: sticky; top: 0; height: 100svh; min-height: 500px; background: #18110e; }
+    iframe { width: 100%; height: 100%; border: 0; display: block; }
+    aside { background: #221a16; padding: 22px; overflow-wrap: anywhere; }
+    h1 { font-size: 23px; font-weight: 550; margin: 0 0 8px; }
+    h2 { font-size: 15px; margin: 25px 0 12px; }
+    p, label, .muted { font-size: 12px; line-height: 1.55; }
+    .muted { color: #bcafa0; }
+    a { color: #d6b682; }
+    button, select, input, textarea { font: inherit; font-size: 12px; border: 1px solid #5a4637; border-radius: 6px; padding: 8px; background: #32251d; color: #f7f2e9; }
+    button { cursor: pointer; min-height: 36px; }
+    button:disabled, input:disabled { opacity: .4; cursor: wait; }
+    button:hover:not(:disabled) { background: #4a3527; }
+    button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid #d6b682; outline-offset: 3px; }
+    .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin: 9px 0; }
+    .stack { display: grid; gap: 8px; }
+    .numbers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; }
+    .numbers input { min-width: 0; width: 100%; }
+    .wide { width: 100%; }
+    .scroll-list { max-height: 270px; overflow: auto; border: 1px solid #453428; border-radius: 6px; padding: 8px; }
+    .node { display: flex; align-items: flex-start; gap: 7px; padding: 5px 0; border-bottom: 1px solid #3c2b23; }
+    .node input { margin-top: 3px; }
+    .node small { display: block; color: #a39181; font-size: 10px; }
+    pre { font-size: 10px; max-height: 320px; overflow: auto; white-space: pre-wrap; background: #130e0b; padding: 10px; border-radius: 6px; }
+    .state { padding: 7px 10px; border: 1px solid #5a4637; border-radius: 6px; font-size: 12px; }
+    #capture-preview { width: 100%; display: none; margin-top: 10px; }
+    #capture-data { display: none; }
+    details { margin: 12px 0; }
+    summary { font-size: 12px; cursor: pointer; }
+    .caption { position: absolute; left: 24px; top: 20px; z-index: 2; pointer-events: none; font-size: 11px; letter-spacing: .15em; text-transform: uppercase; color: #d6b682; }
+    .export-thumbnails { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 5px; margin-top: 8px; }
+    .export-thumbnails figure { margin: 0; }
+    .export-thumbnails img { display: block; width: 100%; aspect-ratio: 16/9; object-fit: contain; }
+    .export-thumbnails figcaption { font-size: 10px; color: #bcafa0; text-align: center; }
+    @media (max-width: 900px) { main { grid-template-columns: 1fr; } .stage { position: relative; height: 68svh; min-height: 400px; } }
+  </style>
+</head>
+<body data-viewer-state="booting" data-model="69be5c0c0d404113a227d9ba19d78447" data-idle="false" data-camera-ticks="0" data-scene-theme="dark">
+  <main>
+    <section class="stage" aria-label="Ivory cake model">
+      <div class="caption">Golden Delights / material inspection</div>
+      <iframe id="api-frame" title="Wedding Cake by Mekokishvili" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen></iframe>
+    </section>
+    <aside>
+      <h1>Ivory & champagne gold</h1>
+      <p class="muted">Local model inspection. Original sculpted geometry; no generated cake. Adjustments are session-only and do not modify the author's source.</p>
+      <p><a href="https://sketchfab.com/3d-models/wedding-cake-69be5c0c0d404113a227d9ba19d78447" target="_blank" rel="noopener">Wedding Cake</a> by <a href="https://sketchfab.com/Mekokishvili" target="_blank" rel="noopener">Mekokishvili</a>, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. Keep this credit with any published adaptation or rendered image.</p>
+      <div id="status" class="state" role="status">Loading official Sketchfab viewer…</div>
+      <div class="row"><button id="refresh" disabled>Refresh inspection</button><button id="reset-camera" disabled>Original camera</button></div>
+
+      <h2>Golden Delights adaptation</h2>
+      <div class="row"><button id="golden-styling" disabled>Apply Golden Delights styling</button><button id="hero-camera" disabled>Full cake hero camera</button></div>
+      <p class="muted">Verified nodes and materials: hide the bride/groom topper; ivory cake, foliage, drapes and selected roses; satin champagne-gold roses and board. Geometry, normals and shadow maps are retained.</p>
+      <label for="assembly">Decoration assembly <output id="assembly-value">100%</output></label>
+      <input id="assembly" class="wide" type="range" min="0" max="100" step="1" value="100" disabled aria-label="Decoration assembly percentage">
+      <div class="row"><button id="assembly-separated" disabled>Lift decorations</button><button id="assembly-complete" disabled>Assemble decorations</button></div>
+      <label><input id="assembly-drapes" type="checkbox" disabled> Include the two separate fondant drapes</label>
+      <p class="muted">Only original decoration transforms move. The merged two-tier cake and board stay fixed. At 0% decorations are lifted 0.22 model units; at 100% their original matrices are restored exactly.</p>
+      <details><summary>Decoration matrices JSON</summary><pre id="assembly-json">Waiting…</pre></details>
+      <details><summary>Raw getMatrix response shape</summary><pre id="matrix-response-json">Waiting…</pre></details>
+
+      <h2>Background</h2>
+      <div class="row"><button id="dark" disabled>Espresso #18110e</button><button id="light" disabled>Ivory #f7f2e9</button></div>
+      <p class="muted">Solid background only. No premium watermark or transparent-background restrictions are bypassed.</p>
+
+      <h2>Camera</h2>
+      <label>Up axis <select id="up-axis"><option value="2">Z (Sketchfab default)</option><option value="1">Y</option></select></label>
+      <div class="row"><label>Elevation <input id="elevation" type="number" value="20" min="-20" max="70" step="1" style="width:65px">°</label><button id="low-angle" disabled>Apply low angle</button></div>
+      <label>Position</label><div class="numbers"><input id="px" type="number" step="any" aria-label="Camera position X"><input id="py" type="number" step="any" aria-label="Camera position Y"><input id="pz" type="number" step="any" aria-label="Camera position Z"></div>
+      <label>Target</label><div class="numbers"><input id="tx" type="number" step="any" aria-label="Camera target X"><input id="ty" type="number" step="any" aria-label="Camera target Y"><input id="tz" type="number" step="any" aria-label="Camera target Z"></div>
+      <div class="row"><button id="apply-camera" disabled>Apply exact camera</button><button id="read-camera" disabled>Read current camera</button></div>
+      <div class="row"><label>FOV <input id="fov" type="number" min="1" max="179" value="35" step="1" style="width:65px">°</label><button id="apply-fov" disabled>Apply FOV</button></div>
+      <div class="row"><label><input id="idle" type="checkbox" disabled> Gentle ±5° idle arc</label></div>
+
+      <h2>Scene nodes</h2>
+      <p class="muted">Uncheck a node to hide it. Parent transforms can hide groups; use the scene graph to verify what each group contains before changing it.</p>
+      <div id="nodes" class="scroll-list">Waiting for model…</div>
+
+      <h2>Materials</h2>
+      <select id="materials" class="wide" disabled aria-label="Material to adjust"></select>
+      <div class="row"><label>Base color <input id="base-color" type="color" value="#eee4d3"></label><button id="ivory-preset" disabled>Warm ivory</button><button id="gold-preset" disabled>Champagne gold</button></div>
+      <div class="row"><label>Metalness <input id="metalness" type="number" min="0" max="1" step=".01" value="0" style="width:70px"></label><label>Roughness <input id="roughness" type="number" min="0" max="1" step=".01" value=".45" style="width:70px"></label></div>
+      <div class="row"><label><input id="remove-color-texture" type="checkbox"> Use solid tint instead of base-color texture</label></div>
+      <div class="row"><button id="apply-material" disabled>Apply material</button><button id="restore-material" disabled>Restore selected material</button></div>
+      <pre id="selected-material">No material selected.</pre>
+
+      <h2>Render capture</h2>
+      <div class="row"><button id="capture-4k" disabled>Capture 3840 × 2160 PNG</button><button id="capture-hd" disabled>Capture 1600 × 1200 PNG</button></div>
+      <a id="capture-link" style="display:none" download="golden-delights-ivory-render.png">Download our viewer render</a>
+      <img id="capture-preview" alt="Our current ivory cake render">
+      <textarea id="capture-data" readonly aria-label="Rendered image data"></textarea>
+
+      <h2>Native 4K scroll sequence</h2>
+      <p class="muted">Export 90 original viewer renders per palette, sequentially, at 3840 × 2160. Full cake → lifted sculpted decorations → assembled cake. Original screenshot data is sent unchanged to our localhost capture server.</p>
+      <label for="export-theme">Palette <select id="export-theme"><option value="both" selected>Both palettes (180 frames)</option><option value="dark">Espresso (90 frames)</option><option value="light">Ivory (90 frames)</option><option value="current">Current palette (90 frames)</option></select></label>
+      <div class="row"><label><input id="force-capture-resize" type="checkbox"> Force native capture buffer resize</label></div>
+      <p class="muted">Optional documented-API workaround: discard a native 3841 × 2161 screenshot before saving the unchanged 3840 × 2160 image. No cropping or upscaling.</p>
+      <div class="row"><button id="export-test" disabled>Test 3 frames (current palette)</button><button id="export-start" disabled>Export native 4K frames</button><button id="export-pause" disabled>Pause export</button><button id="export-cancel" disabled>Cancel export</button></div>
+      <progress id="export-progress" class="wide" value="0" max="180" aria-label="Frames exported"></progress>
+      <div id="export-status" class="state" role="status">Not started.</div>
+      <div id="export-thumbnails" class="export-thumbnails" aria-label="First, middle and final exported frames"></div>
+      <details><summary>Native export viewport JSON</summary><pre id="export-viewport-json">Not exporting.</pre></details>
+      <details><summary>Export camera and motion JSON</summary><pre id="export-json">Waiting…</pre></details>
+
+      <details open><summary>Camera JSON</summary><pre id="camera-json">Waiting…</pre></details>
+      <details><summary>Node map JSON</summary><pre id="nodes-json">Waiting…</pre></details>
+      <details><summary>Scene graph JSON</summary><pre id="graph-json">Waiting…</pre></details>
+      <details><summary>Material list JSON</summary><pre id="materials-json">Waiting…</pre></details>
+      <details><summary>Texture list JSON</summary><pre id="textures-json">Waiting…</pre></details>
+      <details><summary>Environment JSON</summary><pre id="environment-json">Waiting…</pre></details>
+      <details><summary>Session changes JSON</summary><pre id="changes-json">[]</pre></details>
+      <details><summary>Errors</summary><pre id="errors-json">[]</pre></details>
+      <p class="muted"><a href="https://sketchfab.com/developers/viewer/functions" target="_blank" rel="noopener">Official functions</a> · <a href="https://sketchfab.com/developers/viewer/initialization" target="_blank" rel="noopener">Official initialization</a></p>
+    </aside>
+  </main>
+  <script src="https://static.sketchfab.com/api/sketchfab-viewer-1.12.1.js"></script>
+  <script>
+    'use strict';
+    const $ = id => document.getElementById(id);
+    let api, initialCamera, currentCamera, materials = [], initialMaterials = [], idleTimer, idleOrigin = null;
+    let decorationNodes = [], assemblyFrame = 0, assemblyTarget = 1, assemblyCurrent = 1, assemblyLastSend = 0;
+    const decorationMatrices = new Map();
+    const decorationMatrixSources = new Map();
+    const matrixResponses = [];
+    let exportRunning = false, exportPaused = false, exportCancelled = false;
+    const exportThumbnailUrls = [];
+    let exportViewportRestore = null;
+    const EXPORT_FRAME_COUNT = 90;
+    const EXPORT_WIDTH = 3840, EXPORT_HEIGHT = 2160;
+    const GOLDEN_MATERIALS = [
+      { id: 1, name: 'Material.022', color: '#eee4d3', metalness: 0, roughness: .52 },
+      { id: 2, name: 'Material.023', color: '#c3a36d', metalness: .2, roughness: .65 },
+      { id: 3, name: 'Material.004', color: '#eee4d3', metalness: 0, roughness: .65 },
+      { id: 4, name: 'Material.025', color: '#eee4d3', metalness: 0, roughness: .65 },
+      { id: 5, name: 'Rose.002', color: '#eee4d3', metalness: 0, roughness: .65 },
+      { id: 6, name: 'Material.003', color: '#eee4d3', metalness: 0, roughness: .65 },
+      { id: 7, name: 'Material.024', color: '#eee4d3', metalness: 0, roughness: .65 },
+      { id: 12, name: 'Material.012', color: '#c3a36d', metalness: .45, roughness: .5 }
+    ];
+    const changes = [], errors = [];
+    const state = (value, message) => { document.body.dataset.viewerState = value; $('status').textContent = message; };
+    const print = (id, value) => { $(id).textContent = JSON.stringify(value, null, 2); };
+    const logChange = change => { changes.push({ ...change, at: new Date().toISOString() }); print('changes-json', changes); };
+    const error = (where, err) => { errors.push({ where, error: String(err), at: new Date().toISOString() }); print('errors-json', errors); $('status').textContent = where + ': ' + String(err); };
+    function invoke(method, ...args) { return new Promise((resolve, reject) => { try { api[method](...args, (err, result) => err ? reject(err) : resolve(result)); } catch (err) { reject(err); } }); }
+    const linear = value => value <= .04045 ? value / 12.92 : Math.pow((value + .055) / 1.055, 2.4);
+    const srgb = value => value <= .0031308 ? 12.92 * value : 1.055 * Math.pow(value, 1 / 2.4) - .055;
+    const hexToColor = hex => [1, 3, 5].map(index => linear(parseInt(hex.slice(index, index + 2), 16) / 255));
+    const colorToHex = color => '#' + color.slice(0, 3).map(value => Math.round(Math.max(0, Math.min(1, srgb(value))) * 255).toString(16).padStart(2, '0')).join('');
+    const getSelectedMaterial = () => materials.find(item => String(item.stateSetID) === $('materials').value);
+
+    function fillCamera(camera) {
+      if (!camera) return;
+      currentCamera = JSON.parse(JSON.stringify(camera));
+      ['px', 'py', 'pz'].forEach((id, index) => $(id).value = camera.position[index]);
+      ['tx', 'ty', 'tz'].forEach((id, index) => $(id).value = camera.target[index]);
+      print('camera-json', camera);
+    }
+    function populateMaterials() {
+      const selected = $('materials').value;
+      $('materials').replaceChildren(...materials.map(material => {
+        const option = document.createElement('option');
+        option.value = String(material.stateSetID);
+        option.textContent = `${material.name || '(unnamed)'} [${material.stateSetID}]`;
+        return option;
+      }));
+      if (materials.some(item => String(item.stateSetID) === selected)) $('materials').value = selected;
+      showMaterial();
+    }
+    function showMaterial() {
+      const material = getSelectedMaterial();
+      if (!material) return;
+      print('selected-material', material);
+      const channels = material.channels || {};
+      const base = channels.AlbedoPBR || channels.DiffuseColor || channels.DiffusePBR;
+      if (base?.color?.length >= 3) $('base-color').value = colorToHex(base.color);
+      $('metalness').value = channels.MetalnessPBR?.factor ?? 0;
+      $('roughness').value = channels.RoughnessPBR?.factor ?? .45;
+      $('remove-color-texture').checked = false;
+    }
+    function populateNodes(map) {
+      const nodes = Array.isArray(map) ? map : Object.values(map);
+      $('nodes').replaceChildren(...nodes.filter(node => node.instanceID != null).map(node => {
+        const label = document.createElement('label'); label.className = 'node';
+        const checkbox = document.createElement('input'); checkbox.type = 'checkbox'; checkbox.checked = true; checkbox.dataset.nodeId = node.instanceID;
+        const content = document.createElement('span'); content.textContent = node.name || '(unnamed)';
+        const small = document.createElement('small'); small.textContent = `${node.type || 'node'} · ID ${node.instanceID}`; content.append(small);
+        checkbox.addEventListener('change', async () => { try { await invoke(checkbox.checked ? 'show' : 'hide', node.instanceID); logChange({ type: checkbox.checked ? 'show' : 'hide', instanceID: node.instanceID, name: node.name }); } catch (err) { checkbox.checked = !checkbox.checked; error('node visibility', err); } });
+        label.append(checkbox, content); return label;
+      }));
+    }
+    function validateMatrix(value) {
+      if (!value || typeof value !== 'object') return null;
+      const matrix = Array.from({ length: 16 }, (_, index) => value[index]);
+      return matrix.every(Number.isFinite) ? matrix : null;
+    }
+    function extractLocalMatrix(response, node) {
+      // Viewer API versions have exposed either a raw matrix or a structured
+      // local/world response. Never use a world matrix for setMatrix(local).
+      for (const [source, value] of [
+        ['getMatrix.localMatrix', response?.localMatrix],
+        ['getMatrix.local', response?.local],
+        ['getMatrix.matrix', response?.matrix],
+        ['getMatrix.raw', response],
+        ['getNodeMap.localMatrix', node.localMatrix]
+      ]) {
+        const matrix = validateMatrix(value);
+        if (matrix) return { source, matrix };
+      }
+      throw new Error(`No valid local matrix for ${node.instanceID}`);
+    }
+    async function inspect() {
+      const results = await Promise.allSettled([
+        invoke('getCameraLookAt'), invoke('getNodeMap'), invoke('getSceneGraph'), invoke('getMaterialList'), invoke('getTextureList'), invoke('getEnvironment'), invoke('getFov')
+      ]);
+      const ids = ['camera-json', 'nodes-json', 'graph-json', 'materials-json', 'textures-json', 'environment-json', null];
+      results.forEach((result, index) => { if (result.status === 'fulfilled') { if (ids[index]) print(ids[index], result.value); } else error(ids[index] || 'getFov', result.reason); });
+      if (results[0].status === 'fulfilled') { fillCamera(results[0].value); initialCamera ||= JSON.parse(JSON.stringify(results[0].value)); }
+      if (results[1].status === 'fulfilled') {
+        populateNodes(results[1].value);
+        const nodes = Array.isArray(results[1].value) ? results[1].value : Object.values(results[1].value);
+        decorationNodes = nodes.filter(node => node.type === 'MatrixTransform' && (/^Plane(?:[._]|$)/.test(node.name || '') || [312, 329].includes(node.instanceID)));
+        const matrixResults = await Promise.allSettled(decorationNodes.filter(node => !decorationMatrices.has(node.instanceID)).map(async node => {
+          let response;
+          try { response = await invoke('getMatrix', node.instanceID); }
+          catch (err) { response = { apiError: String(err) }; }
+          if (matrixResponses.length < 3) matrixResponses.push({ instanceID: node.instanceID, response });
+          const { source, matrix } = extractLocalMatrix(response, node);
+          decorationMatrices.set(node.instanceID, matrix); decorationMatrixSources.set(node.instanceID, source);
+        }));
+        matrixResults.forEach(result => { if (result.status === 'rejected') error('decoration matrix', result.reason); });
+        print('matrix-response-json', matrixResponses);
+        print('assembly-json', decorationNodes.map(node => ({ instanceID: node.instanceID, name: node.name, matrixSource: decorationMatrixSources.get(node.instanceID), originalMatrix: decorationMatrices.get(node.instanceID) })));
+        document.body.dataset.decorationCount = String(decorationMatrices.size);
+      }
+      if (results[3].status === 'fulfilled') { materials = results[3].value; if (!initialMaterials.length) initialMaterials = JSON.parse(JSON.stringify(materials)); populateMaterials(); }
+      if (results[6].status === 'fulfilled') $('fov').value = results[6].value;
+      document.body.dataset.nodeCount = results[1].status === 'fulfilled' ? String(Object.keys(results[1].value).length) : '0';
+      document.body.dataset.materialCount = String(materials.length);
+    }
+    function stopIdle() { clearTimeout(idleTimer); idleTimer = null; $('idle').checked = false; document.body.dataset.idle = 'false'; if (api) api.setUserInteraction(true); }
+    async function setCamera(position, target, duration = .5) {
+      stopIdle(); await invoke('setCameraLookAt', position, target, duration); fillCamera({ position, target }); logChange({ type: 'camera', position, target });
+    }
+    async function applyMaterial() {
+      const original = getSelectedMaterial();
+      if (!original) return;
+      const material = JSON.parse(JSON.stringify(original));
+      const channels = material.channels;
+      const baseName = channels.AlbedoPBR ? 'AlbedoPBR' : channels.DiffuseColor ? 'DiffuseColor' : 'DiffusePBR';
+      channels[baseName] ||= {};
+      channels[baseName].enable = true; channels[baseName].color = hexToColor($('base-color').value); channels[baseName].factor = 1;
+      if ($('remove-color-texture').checked) delete channels[baseName].texture;
+      if (channels.MetalnessPBR) { channels.MetalnessPBR.enable = true; channels.MetalnessPBR.factor = +$('metalness').value; }
+      if (channels.RoughnessPBR) { channels.RoughnessPBR.enable = true; channels.RoughnessPBR.factor = +$('roughness').value; }
+      await invoke('setMaterial', material); materials = materials.map(item => item.stateSetID === material.stateSetID ? material : item);
+      print('materials-json', materials); showMaterial(); logChange({ type: 'material', stateSetID: material.stateSetID, name: material.name, material });
+    }
+    async function applyGoldenStyling() {
+      state('styling', 'Applying verified ivory and champagne-gold materials…');
+      for (const instanceID of [388, 482]) {
+        await invoke('hide', instanceID);
+        const checkbox = document.querySelector(`[data-node-id="${instanceID}"]`); if (checkbox) checkbox.checked = false;
+      }
+      for (const style of GOLDEN_MATERIALS) {
+        const original = materials.find(material => material.stateSetID === style.id && material.name === style.name);
+        if (!original) throw new Error(`Verified material ${style.id} (${style.name}) is missing; adaptation aborted.`);
+        const material = JSON.parse(JSON.stringify(original));
+        material.channels.AlbedoPBR = { ...material.channels.AlbedoPBR, enable: true, factor: 1, color: hexToColor(style.color) };
+        delete material.channels.AlbedoPBR.texture;
+        material.channels.MetalnessPBR = { ...material.channels.MetalnessPBR, enable: true, factor: style.metalness };
+        material.channels.RoughnessPBR = { ...material.channels.RoughnessPBR, enable: true, factor: style.roughness };
+        await invoke('setMaterial', material);
+        materials = materials.map(item => item.stateSetID === material.stateSetID ? material : item);
+      }
+      print('materials-json', materials); showMaterial(); logChange({ type: 'golden-styling', hiddenNodes: [388, 482], styles: GOLDEN_MATERIALS });
+      document.body.dataset.goldenStyling = 'applied'; state('ready', 'Golden Delights styling applied. Check full cake framing and decoration assembly.');
+    }
+    function sendDecorationMatrices(progress) {
+      const includeDrapes = $('assembly-drapes').checked;
+      for (const node of decorationNodes) {
+        const original = decorationMatrices.get(node.instanceID); if (!original) continue;
+        const matrix = [...original];
+        const isDrape = [312, 329].includes(node.instanceID);
+        if (!isDrape || includeDrapes) matrix[13] += .22 * (1 - progress);
+        // All verified decoration transforms are children of GLTF_SceneRootNode.
+        // That parent's Y axis maps to world Z, so local translation index 13
+        // raises the object vertically without altering its original rotation/scale.
+        api.setMatrix(node.instanceID, matrix, err => { if (err) error(`assembly node ${node.instanceID}`, err); });
+      }
+      document.body.dataset.assemblyProgress = progress.toFixed(4);
+      document.body.dataset.assemblyLift = (.22 * (1 - progress)).toFixed(4);
+      document.body.dataset.assemblyTicks = String(+(document.body.dataset.assemblyTicks || '0') + 1);
+    }
+    function animateAssembly(value) {
+      assemblyTarget = Math.max(0, Math.min(1, value));
+      $('assembly').value = String(Math.round(assemblyTarget * 100)); $('assembly-value').textContent = `${Math.round(assemblyTarget * 100)}%`;
+      if (assemblyFrame) return;
+      let previous = performance.now();
+      function tick(now) {
+        const dt = Math.min(100, now - previous); previous = now;
+        assemblyCurrent += (assemblyTarget - assemblyCurrent) * (1 - Math.exp(-dt / 160));
+        const settled = Math.abs(assemblyCurrent - assemblyTarget) < .0008;
+        if (settled) assemblyCurrent = assemblyTarget;
+        if (now - assemblyLastSend >= 33 || settled) { sendDecorationMatrices(assemblyCurrent); assemblyLastSend = now; }
+        if (!settled) assemblyFrame = requestAnimationFrame(tick);
+        else { assemblyFrame = 0; logChange({ type: 'decoration-assembly', progress: assemblyTarget, includeDrapes: $('assembly-drapes').checked }); }
+      }
+      assemblyFrame = requestAnimationFrame(tick);
+    }
+    async function capture(width, height) {
+      stopIdle(); state('capturing', `Rendering ${width} × ${height} PNG…`);
+      const data = await invoke('getScreenShot', width, height, 'image/png');
+      $('capture-link').href = data; $('capture-link').style.display = 'inline'; $('capture-link').download = `golden-delights-ivory-${width}x${height}.png`;
+      $('capture-preview').src = data; $('capture-preview').style.display = 'block'; $('capture-data').value = data;
+      document.body.dataset.captureWidth = String(width); document.body.dataset.captureHeight = String(height); state('ready', 'Render captured; our own viewer image is ready to download.');
+    }
+    const smoothstep = (start, end, value) => {
+      const x = Math.max(0, Math.min(1, (value - start) / (end - start)));
+      return x * x * (3 - 2 * x);
+    };
+    function choreography(progress) {
+      const detail = smoothstep(.14, .42, progress) * (1 - smoothstep(.58, .86, progress));
+      const target = [.002775528, .20, .065 + detail * .085];
+      const radius = 1.7 + detail * .25;
+      const yaw = Math.atan2(-1.516920241, .034456098) + (progress - .5) * 24 * Math.PI / 180;
+      const elevation = 20 * Math.PI / 180;
+      const position = [target[0] + radius * Math.cos(elevation) * Math.cos(yaw), target[1] + radius * Math.cos(elevation) * Math.sin(yaw), target[2] + radius * Math.sin(elevation)];
+      return { position, target, radius, elevationDegrees: 20, azimuthDegrees: (progress - .5) * 24, detail };
+    }
+    function decorationLift(node, progress) {
+      const original = decorationMatrices.get(node.instanceID);
+      const drape = [312, 329].includes(node.instanceID);
+      const height = original?.[13] || 0;
+      const amplitude = drape ? .13 : height >= .22 ? .22 : height >= .12 ? .18 : .15;
+      const stagger = drape ? .01 : height >= .22 ? 0 : height >= .12 ? .02 : .04;
+      const rise = smoothstep(.18 + stagger, .42 + stagger, progress);
+      const settle = 1 - smoothstep(.48 + stagger, .8, progress);
+      return amplitude * rise * settle;
+    }
+    async function applyExportFrame(progress) {
+      const camera = choreography(progress), moves = [];
+      for (const node of decorationNodes) {
+        const original = decorationMatrices.get(node.instanceID);
+        if (!original) throw new Error(`Missing verified decoration matrix ${node.instanceID}`);
+        const matrix = [...original], lift = decorationLift(node, progress); matrix[13] += lift;
+        await invoke('setMatrix', node.instanceID, matrix);
+        moves.push({ instanceID: node.instanceID, lift });
+      }
+      await invoke('setCameraLookAt', camera.position, camera.target, 0);
+      // Camera callbacks acknowledge the start of the move. Allow two native
+      // render frames after zero-duration updates before requesting the image.
+      await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+      print('export-json', { progress, camera, moves });
+      document.body.dataset.exportSceneProgress = progress.toFixed(5);
+      return camera;
+    }
+    async function enterExportViewport() {
+      const frame = $('api-frame'), stage = document.querySelector('.stage'), main = document.querySelector('main'), aside = document.querySelector('aside');
+      const oldStyles = [frame, stage, main, aside, document.body, document.documentElement].map(element => ({ element, cssText: element.style.cssText }));
+      main.style.display = 'block'; main.style.width = `${EXPORT_WIDTH}px`; main.style.minHeight = `${EXPORT_HEIGHT}px`;
+      stage.style.position = 'relative'; stage.style.width = `${EXPORT_WIDTH}px`; stage.style.height = `${EXPORT_HEIGHT}px`;
+      stage.style.minHeight = `${EXPORT_HEIGHT}px`; stage.style.overflow = 'visible';
+      frame.style.width = `${EXPORT_WIDTH}px`; frame.style.height = `${EXPORT_HEIGHT}px`;
+      frame.style.maxWidth = 'none'; frame.style.maxHeight = 'none'; frame.style.position = 'absolute';
+      frame.style.left = '0'; frame.style.top = '0'; frame.style.transform = 'none';
+      aside.style.position = 'fixed'; aside.style.right = '0'; aside.style.top = '0'; aside.style.width = '380px';
+      aside.style.maxWidth = '95vw'; aside.style.height = '100svh'; aside.style.overflow = 'auto'; aside.style.zIndex = '3';
+      document.body.style.overflow = 'auto'; document.documentElement.style.overflow = 'auto';
+      window.scrollTo(0, 0);
+      exportViewportRestore = () => {
+        oldStyles.forEach(({ element, cssText }) => element.style.cssText = cssText);
+        stage.style.background = document.body.dataset.sceneTheme === 'light' ? '#f7f2e9' : '#18110e'; exportViewportRestore = null;
+      };
+      // The entire embed occupies 3840×2160 at scale1. Page overflow is allowed;
+      // the iframe is neither clipped nor transformed. Our own controls remain
+      // fixed so export can be paused/cancelled on an ordinary laptop viewport.
+      // No undocumented renderer hooks or browser viewport changes are used.
+      await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+      const bounds = frame.getBoundingClientRect();
+      document.body.dataset.exportViewportWidth = String(frame.clientWidth); document.body.dataset.exportViewportHeight = String(frame.clientHeight);
+      print('export-viewport-json', {
+        layoutWidth: frame.clientWidth, layoutHeight: frame.clientHeight,
+        boundingWidth: bounds.width, boundingHeight: bounds.height, transform: getComputedStyle(frame).transform,
+        hostDevicePixelRatio: window.devicePixelRatio, captureWidth: EXPORT_WIDTH, captureHeight: EXPORT_HEIGHT
+      });
+      if (frame.clientWidth !== EXPORT_WIDTH || frame.clientHeight !== EXPORT_HEIGHT || bounds.width !== EXPORT_WIDTH || bounds.height !== EXPORT_HEIGHT) throw new Error(`Native iframe viewport ${frame.clientWidth}×${frame.clientHeight} (${bounds.width}×${bounds.height} bounds) does not match unscaled4K capture.`);
+    }
+    async function recordViewportProjection(camera) {
+      const frame = $('api-frame');
+      const coordinate = await new Promise(resolve => api.getWorldToScreenCoordinates(camera.target, resolve));
+      const existing = JSON.parse($('export-viewport-json').textContent);
+      print('export-viewport-json', { ...existing, layoutWidth: frame.clientWidth, layoutHeight: frame.clientHeight, cameraTargetProjection: coordinate });
+    }
+    async function setPalette(theme) {
+      const color = theme === 'light' ? [247/255, 242/255, 233/255] : [24/255, 17/255, 14/255];
+      await invoke('setBackground', { color }); document.body.dataset.sceneTheme = theme;
+      document.querySelector('.stage').style.background = theme === 'light' ? '#f7f2e9' : '#18110e';
+      await new Promise(resolve => requestAnimationFrame(resolve));
+    }
+    async function addExportThumbnail(dataUrl, theme, index) {
+      const blob = await (await fetch(dataUrl)).blob(), url = URL.createObjectURL(blob); exportThumbnailUrls.push(url);
+      const figure = document.createElement('figure'), image = document.createElement('img'), caption = document.createElement('figcaption');
+      image.src = url; image.alt = `${theme} native render frame ${index}`;
+      caption.textContent = `${theme} / ${index === 0 ? 'first' : index === EXPORT_FRAME_COUNT - 1 ? 'final' : 'middle'}`;
+      figure.append(image, caption); $('export-thumbnails').append(figure);
+    }
+    async function exportSequence(test = false) {
+      if (exportRunning) return;
+      const selection = $('export-theme').value, palettes = test ? [document.body.dataset.sceneTheme] : selection === 'both' ? ['dark', 'light'] : [selection === 'current' ? document.body.dataset.sceneTheme : selection];
+      const indices = test ? [0, 1, 2] : Array.from({ length: EXPORT_FRAME_COUNT }, (_, index) => index);
+      const total = palettes.length * indices.length, forceResize = $('force-capture-resize').checked;
+      exportRunning = true; exportPaused = false; exportCancelled = false; stopIdle();
+      if (assemblyFrame) { cancelAnimationFrame(assemblyFrame); assemblyFrame = 0; }
+      const controls = [...document.querySelectorAll('button, input, select')].map(element => ({ element, disabled: element.disabled }));
+      controls.forEach(({ element }) => element.disabled = true);
+      $('export-pause').disabled = false; $('export-cancel').disabled = false; $('export-pause').textContent = 'Pause export';
+      $('export-progress').max = total; $('export-progress').value = 0; document.body.dataset.exportState = 'preparing'; document.body.dataset.exportFrames = '0'; document.body.dataset.exportTotal = String(total); document.body.dataset.exportMode = test ? 'test' : 'full'; document.body.dataset.exportForceResize = String(forceResize);
+      exportThumbnailUrls.splice(0).forEach(url => URL.revokeObjectURL(url)); $('export-thumbnails').replaceChildren();
+      let frames = 0;
+      try {
+        $('export-status').textContent = 'Preparing native 3840 × 2160 iframe viewport…';
+        await enterExportViewport();
+        await applyGoldenStyling(); await invoke('setFov', 25); await invoke('setUserInteraction', false);
+        paletteLoop: for (const theme of palettes) {
+          if (exportCancelled) break;
+          await setPalette(theme); document.body.dataset.exportTheme = theme;
+          for (const index of indices) {
+            while (exportPaused && !exportCancelled) await new Promise(resolve => setTimeout(resolve, 150));
+            if (exportCancelled) break paletteLoop;
+            const progress = index / (EXPORT_FRAME_COUNT - 1);
+            document.body.dataset.exportState = 'rendering'; document.body.dataset.exportFrameIndex = String(index);
+            $('export-status').textContent = `Rendering ${theme} frame ${index + 1} / ${EXPORT_FRAME_COUNT} (${frames} / ${total} saved)…`;
+            const camera = await applyExportFrame(progress);
+            if (index < 3 || index === Math.floor(EXPORT_FRAME_COUNT / 2) || index === EXPORT_FRAME_COUNT - 1) await recordViewportProjection(camera);
+            if (forceResize) await invoke('getScreenShot', EXPORT_WIDTH + 1, EXPORT_HEIGHT + 1, 'image/png');
+            const dataUrl = await invoke('getScreenShot', EXPORT_WIDTH, EXPORT_HEIGHT, 'image/png');
+            if (exportCancelled) break paletteLoop;
+            if (typeof dataUrl !== 'string' || !dataUrl.startsWith('data:image/png;base64,')) throw new Error(`Frame ${index} did not return a native PNG data URL.`);
+            document.body.dataset.exportState = 'uploading';
+            const response = await fetch(`http://127.0.0.1:5174/capture/${String(index).padStart(3, '0')}`, {
+              method: 'POST', headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ dataUrl, index, progress, theme, width: EXPORT_WIDTH, height: EXPORT_HEIGHT, camera, forcedBufferResize: forceResize, model: '69be5c0c0d404113a227d9ba19d78447' })
+            });
+            if (!response.ok) throw new Error(`Capture server rejected ${theme} frame ${index}: HTTP ${response.status}`);
+            frames++; $('export-progress').value = frames; document.body.dataset.exportFrames = String(frames);
+            $('export-status').textContent = `Saved ${frames} / ${total} native 4K frames.`;
+            if (test || [0, Math.floor(EXPORT_FRAME_COUNT / 2), EXPORT_FRAME_COUNT - 1].includes(index)) await addExportThumbnail(dataUrl, theme, index);
+          }
+        }
+        document.body.dataset.exportState = exportCancelled ? 'cancelled' : 'complete';
+        $('export-status').textContent = exportCancelled ? `Export cancelled after ${frames} saved frames.` : `Export complete: ${frames} native 3840 × 2160 frames saved.`;
+        state('ready', exportCancelled ? 'Export cancelled; previously saved renders remain available.' : 'Native 4K scroll sequence exported.');
+      } catch (err) {
+        document.body.dataset.exportState = 'error'; $('export-status').textContent = `Export stopped after ${frames} frames: ${String(err)}`; error('sequence export', err);
+      } finally {
+        exportRunning = false; exportPaused = false; controls.forEach(({ element, disabled }) => element.disabled = disabled);
+        $('export-pause').disabled = true; $('export-cancel').disabled = true; $('export-pause').textContent = 'Pause export';
+        exportViewportRestore?.();
+        api.setUserInteraction(true);
+      }
+    }
+    function bind(id, handler) { $(id).addEventListener('click', () => Promise.resolve().then(handler).catch(err => error(id, err))); }
+    bind('refresh', inspect);
+    bind('golden-styling', applyGoldenStyling);
+    bind('hero-camera', async () => { $('fov').value = '25'; await invoke('setFov', 25); await setCamera([.037231626, -1.316920241, .617256229], [.002775528, .20, .065], .8); });
+    bind('assembly-separated', () => animateAssembly(0));
+    bind('assembly-complete', () => animateAssembly(1));
+    $('assembly').addEventListener('input', () => animateAssembly(+$('assembly').value / 100));
+    $('assembly-drapes').addEventListener('change', () => sendDecorationMatrices(assemblyCurrent));
+    bind('reset-camera', () => setCamera(initialCamera.position, initialCamera.target));
+    bind('read-camera', async () => fillCamera(await invoke('getCameraLookAt')));
+    bind('apply-camera', () => setCamera(['px', 'py', 'pz'].map(id => +$(id).value), ['tx', 'ty', 'tz'].map(id => +$(id).value)));
+    bind('low-angle', async () => {
+      const camera = await invoke('getCameraLookAt'); const up = +$('up-axis').value;
+      const horizontal = [0, 1, 2].filter(axis => axis !== up), delta = camera.position.map((value, axis) => value - camera.target[axis]);
+      const radius = Math.hypot(...delta), yaw = Math.atan2(delta[horizontal[1]], delta[horizontal[0]]), elevation = +$('elevation').value * Math.PI / 180;
+      const position = [...camera.target]; position[horizontal[0]] += radius * Math.cos(elevation) * Math.cos(yaw); position[horizontal[1]] += radius * Math.cos(elevation) * Math.sin(yaw); position[up] += radius * Math.sin(elevation);
+      await setCamera(position, camera.target);
+    });
+    bind('apply-fov', async () => { const angle = +$('fov').value; await invoke('setFov', angle); logChange({ type: 'fov', angle }); });
+    bind('dark', async () => { await setPalette('dark'); logChange({ type: 'background', color: '#18110e' }); });
+    bind('light', async () => { await setPalette('light'); logChange({ type: 'background', color: '#f7f2e9' }); });
+    $('materials').addEventListener('change', showMaterial);
+    bind('apply-material', applyMaterial);
+    bind('ivory-preset', () => { $('base-color').value = '#eee4d3'; $('metalness').value = '0'; $('roughness').value = '.46'; });
+    bind('gold-preset', () => { $('base-color').value = '#c3a36d'; $('metalness').value = '.72'; $('roughness').value = '.34'; });
+    bind('restore-material', async () => { const material = JSON.parse(JSON.stringify(initialMaterials.find(item => String(item.stateSetID) === $('materials').value))); await invoke('setMaterial', material); materials = materials.map(item => item.stateSetID === material.stateSetID ? material : item); showMaterial(); print('materials-json', materials); logChange({ type: 'restore-material', stateSetID: material.stateSetID }); });
+    bind('capture-4k', () => capture(3840, 2160)); bind('capture-hd', () => capture(1600, 1200));
+    bind('export-start', () => exportSequence(false));
+    bind('export-test', () => exportSequence(true));
+    bind('export-pause', () => {
+      if (!exportRunning) return;
+      exportPaused = !exportPaused; $('export-pause').textContent = exportPaused ? 'Resume export' : 'Pause export';
+      document.body.dataset.exportState = exportPaused ? 'paused' : 'rendering';
+      $('export-status').textContent = exportPaused ? `Paused after ${document.body.dataset.exportFrames} saved frames. The active capture may finish before pausing.` : 'Resuming export…';
+    });
+    bind('export-cancel', () => { exportCancelled = true; exportPaused = false; $('export-status').textContent = 'Cancelling after the current capture…'; });
+    $('idle').addEventListener('change', async () => {
+      if (!$('idle').checked) { stopIdle(); return; }
+      try {
+        idleOrigin = await invoke('getCameraLookAt'); api.setUserInteraction(false); document.body.dataset.idle = 'true';
+        const started = performance.now(), up = +$('up-axis').value, horizontal = [0, 1, 2].filter(axis => axis !== up), delta = idleOrigin.position.map((value, axis) => value - idleOrigin.target[axis]);
+        function tick() {
+          if (!$('idle').checked || document.hidden) { idleTimer = setTimeout(tick, 150); return; }
+          const angle = Math.sin((performance.now() - started) / 5000) * (5 * Math.PI / 180), position = [...idleOrigin.position], a = horizontal[0], b = horizontal[1];
+          position[a] = idleOrigin.target[a] + delta[a] * Math.cos(angle) - delta[b] * Math.sin(angle); position[b] = idleOrigin.target[b] + delta[a] * Math.sin(angle) + delta[b] * Math.cos(angle);
+          api.setCameraLookAt(position, idleOrigin.target, .12, err => { if (err) error('idle camera', err); }); document.body.dataset.cameraTicks = String(+document.body.dataset.cameraTicks + 1); idleTimer = setTimeout(tick, 120);
+        }
+        tick();
+      } catch (err) { stopIdle(); error('idle', err); }
+    });
+    if (!window.Sketchfab) { state('error', 'Official viewer script failed to load.'); }
+    else {
+      const client = new Sketchfab('1.12.1', $('api-frame'));
+      client.init('69be5c0c0d404113a227d9ba19d78447', {
+        autostart: 1, camera: 0, autospin: 0, scrollwheel: 0, dnt: 1, animation_autoplay: 0, annotations_visible: 0, ui_theme: 'dark', max_texture_size: 4096,
+        success(viewerApi) {
+          api = viewerApi;
+          api.addEventListener('viewerready', async () => {
+            try {
+              await invoke('setBackground', { color: [24/255, 17/255, 14/255] }); await inspect();
+              document.querySelectorAll('button, #materials, #idle, #assembly, #assembly-drapes').forEach(element => element.disabled = false); $('export-pause').disabled = true; $('export-cancel').disabled = true; state('ready', 'Viewer ready. Inspect nodes and materials before adapting the cake.');
+            } catch (err) { error('viewerready', err); state('error', String(err)); }
+          });
+          api.start();
+        },
+        error() { state('error', 'The official embedded model could not load.'); }
+      });
+    }
+  </script>
+</body>
+</html>

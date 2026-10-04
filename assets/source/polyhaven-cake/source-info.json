@@ -1,0 +1,47 @@
+{
+  "name": "Strawberry Chocolate Cake",
+  "categories": [
+    "props",
+    "food"
+  ],
+  "type": 2,
+  "tags": [
+    "cooking",
+    "culinary",
+    "cake",
+    "baked goods",
+    "bakery",
+    "treat"
+  ],
+  "authors": {
+    "Kuutti Siitonen": "All"
+  },
+  "max_resolution": [
+    8192,
+    8192
+  ],
+  "polycount": 27054,
+  "texel_density": 18766.443968015203,
+  "dimensions": [
+    244.26066130399704,
+    240.267813205719,
+    79.19733006793805
+  ],
+  "date_published": 1721347200,
+  "staging": null,
+  "files_hash": "a441726fcf88501501868c20037cfbf7a88f82bd",
+  "description": "Free 8K model of a rustic chocolate cake topped with glossy strawberry slices and chocolate shavings. Rich texture and hand-made look.",
+  "category_id": "02fe0dc1-b3af-58f0-bfd7-e46c4085eec1",
+  "category": "Food & Kitchen/Prepared Food/Cakes & Pastries",
+  "attributes": {
+    "condition": [
+      "clean"
+    ],
+    "material": [
+      "food"
+    ]
+  },
+  "img_version": "33747a79",
+  "download_count": 4115,
+  "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/strawberry_chocolate_cake.png?width=256&height=256&v=33747a79"
+}

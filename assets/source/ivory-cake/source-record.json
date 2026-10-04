@@ -1,0 +1,32 @@
+{
+  "inspectedAt": "2026-10-04T01:08:02.263Z",
+  "metadataUrl": "https://api.sketchfab.com/v3/models/69be5c0c0d404113a227d9ba19d78447",
+  "modelUrl": "https://sketchfab.com/3d-models/wedding-cake-69be5c0c0d404113a227d9ba19d78447",
+  "author": "Mekokishvili",
+  "authorUrl": "https://sketchfab.com/Mekokishvili",
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution",
+    "requirements": "Author must be credited. Commercial use is allowed.",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "slug": "by"
+  },
+  "nativeRenderSize": [
+    3840,
+    2160
+  ],
+  "maximumAvailableTextureSize": [
+    2048,
+    2048
+  ],
+  "sdkVersion": "1.12.1",
+  "apiMethod": "getScreenShot(3840, 2160, 'image/png', callback)",
+  "originalModelFilesDownloaded": false,
+  "screenshotExample": "https://raw.githubusercontent.com/sketchfab/experiments/master/screenshots/js/views/App.js",
+  "copyrightNotice": "Wedding Cake by Mekokishvili, licensed under CC BY 4.0. Ivory/gold styling, hidden figurine topper, camera movement and decoration assembly are adapted for Golden Delights.",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "termsUrl": "https://sketchfab.com/terms",
+  "developerTermsUrl": "https://sketchfab.com/developers/terms",
+  "nativeOutputNotice": "The supported Viewer API returns a clean render. No logo is cropped, masked, hidden or otherwise removed from the exported image."
+}

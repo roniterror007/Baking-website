@@ -1,0 +1,323 @@
+{
+  "products": [
+    {
+      "id": "vanilla-sponge",
+      "name": "Vanilla sponge cake",
+      "category": "Cakes",
+      "collection": "Sponge cakes",
+      "description": "Cloud-soft vanilla sponge, finished with a silky cream frosting.",
+      "price": 650,
+      "image": "/images/hero-cake.webp",
+      "featured": true,
+      "available": true
+    },
+    {
+      "id": "chocolate-sponge",
+      "name": "Chocolate sponge cake",
+      "category": "Cakes",
+      "collection": "Sponge cakes",
+      "description": "Rich cocoa sponge with layers of smooth chocolate frosting.",
+      "price": 750,
+      "image": "/images/hero-cake.webp",
+      "featured": false,
+      "available": true
+    },
+    {
+      "id": "mango-cake",
+      "name": "Mango cake",
+      "category": "Cakes",
+      "collection": "Sponge cakes",
+      "description": "Golden mango, delicate sponge and a sunny fruit finish.",
+      "price": 850,
+      "image": "/images/hero-cake.webp",
+      "featured": false,
+      "available": true
+    },
+    {
+      "id": "orange-nugget",
+      "name": "Orange nugget cake",
+      "category": "Cakes",
+      "collection": "Sponge cakes",
+      "description": "Bright orange zest with little bursts of citrus in every bite.",
+      "price": 750,
+      "image": "/images/hero-cake.webp",
+      "featured": false,
+      "available": true
+    },
+    {
+      "id": "pineapple-cake",
+      "name": "Pineapple cake",
+      "category": "Cakes",
+      "collection": "Sponge cakes",
+      "description": "Juicy pineapple layered with fresh cream and tender sponge.",
+      "price": 700,
+      "image": "/images/hero-cake.webp",
+      "featured": false,
+      "available": true
+    },
+    {
+      "id": "new-york-cheesecake",
+      "name": "Baked New York cheese cake",
+      "category": "Cakes",
+      "collection": "Cheesecakes",
+      "description": "A classic baked cheesecake with a buttery biscuit foundation.",
+      "price": 1100,
+      "image": "/images/bakery-selection.webp",
+      "featured": false,
+      "available": true
+    },
+    {
+      "id": "biscoff-cheesecake",
+      "name": "No bake creamy biscoff cheese cake",
+      "category": "Cakes",
+      "collection": "Cheesecakes",
+      "description": "Caramelised Biscoff meets a luxuriously creamy cheesecake.",
+      "price": 1250,
+      "image": "/images/bakery-selection.webp",
+      "featured": true,
+      "available": true
+    },
+    {
+      "id": "mango-cheesecake",
+      "name": "Frozen layered mango cheese cake",
+      "category": "Cakes",
+      "collection": "Cheesecakes",
+      "description": "Beautiful chilled layers of mango and creamy cheesecake.",
+      "price": 1200,
+      "image": "/images/bakery-selection.webp",
+      "featured": false,
+      "available": true
+    },
+    {
+      "id": "blueberry-cheesecake",
+      "name": "No bake white chocolate blueberry cheese cake",
+      "category": "Cakes",
+      "collection": "Cheesecakes",
+      "description": "White chocolate cream with a jewel-bright blueberry swirl.",
+      "price": 1300,
+      "image": "/images/bakery-selection.webp",
+      "featured": false,
+      "available": true
+    },
+    {
+      "id": "ferrero-cheesecake",
+      "name": "Ferrero rocher cheese cake",
+      "category": "Cakes",
+      "collection": "Cheesecakes",
+      "description": "Chocolate, hazelnut and Ferrero Rocher in a decadent cheesecake.",
+      "price": 1400,
+      "image": "/images/bakery-selection.webp",
+      "featured": false,
+      "available": true
+    },
+    {
+      "id": "lemon-cheesecake",
+      "name": "Baked lemon cheese cake",
+      "category": "Cakes",
+      "collection": "Cheesecakes",
+      "description": "A gently baked cheesecake with a refreshing lemon finish.",
+      "price": 1150,
+      "image": "/images/bakery-selection.webp",
+      "featured": false,
+      "available": true
+    },
+    {
+      "id": "tiramisu-cheesecake",
+      "name": "Tiramisu cheese cake",
+      "category": "Cakes",
+      "collection": "Cheesecakes",
+      "description": "Coffee-kissed layers inspired by the beloved Italian dessert.",
+      "price": 1350,
+      "image": "/images/bakery-selection.webp",
+      "featured": false,
+      "available": true
+    },
+    {
+      "id": "gulab-jamun-cheesecake",
+      "name": "Gulab jamun fusion cheese cake",
+      "category": "Cakes",
+      "collection": "Cheesecakes",
+      "description": "Soft gulab jamun woven into a celebration of creamy cheesecake.",
+      "price": 1350,
+      "image": "/images/bakery-selection.webp",
+      "featured": false,
+      "available": true
+    },
+    {
+      "id": "rasmalai-fusion",
+      "name": "Rasmalai fusion cake",
+      "category": "Cakes",
+      "collection": "Mithai cakes",
+      "description": "Saffron, pistachio and fragrant rasmalai in a festive fusion cake.",
+      "price": 1100,
+      "image": "/images/hero-cake.webp",
+      "featured": false,
+      "available": true
+    },
+    {
+      "id": "rose-nuts-blondies",
+      "name": "Rose nuts blondies",
+      "category": "Blondies",
+      "collection": "Blondies",
+      "description": "Buttery blondies with fragrant rose and a generous scattering of nuts.",
+      "price": 420,
+      "image": "/images/bakery-selection.webp",
+      "featured": false,
+      "available": true
+    },
+    {
+      "id": "almond-rose-blondies",
+      "name": "Almond rose blondies",
+      "category": "Blondies",
+      "collection": "Blondies",
+      "description": "Golden almond blondies with a delicate rose finish.",
+      "price": 450,
+      "image": "/images/bakery-selection.webp",
+      "featured": false,
+      "available": true
+    },
+    {
+      "id": "mango-blondies",
+      "name": "Mango blondies",
+      "category": "Blondies",
+      "collection": "Blondies",
+      "description": "Bright mango folded into our soft, golden blondie batter.",
+      "price": 440,
+      "image": "/images/bakery-selection.webp",
+      "featured": false,
+      "available": true
+    },
+    {
+      "id": "pistachio-almond-blondies",
+      "name": "Pistachio almond blondies",
+      "category": "Blondies",
+      "collection": "Blondies",
+      "description": "A buttery nutty square with pistachio and toasted almond.",
+      "price": 480,
+      "image": "/images/bakery-selection.webp",
+      "featured": true,
+      "available": true
+    },
+    {
+      "id": "walnut-brownie",
+      "name": "Walnut chocolate brownie",
+      "category": "Brownies",
+      "collection": "Brownies",
+      "description": "Fudgy chocolate brownie with the crunch of toasted walnuts.",
+      "price": 380,
+      "image": "/images/bakery-selection.webp",
+      "featured": true,
+      "available": true
+    },
+    {
+      "id": "red-velvet-brownie",
+      "name": "Red velvet brownie",
+      "category": "Brownies",
+      "collection": "Brownies",
+      "description": "A tender red velvet square with a rich cocoa note.",
+      "price": 400,
+      "image": "/images/bakery-selection.webp",
+      "featured": false,
+      "available": true
+    },
+    {
+      "id": "biscoff-brownie",
+      "name": "Biscoff brownie",
+      "category": "Brownies",
+      "collection": "Brownies",
+      "description": "Deep chocolate with a swirl of caramelised biscuit butter.",
+      "price": 450,
+      "image": "/images/bakery-selection.webp",
+      "featured": false,
+      "available": true
+    },
+    {
+      "id": "cream-cheese-brownie",
+      "name": "Classic cream cheese brownie",
+      "category": "Brownies",
+      "collection": "Brownies",
+      "description": "A fudgy chocolate base marbled with tangy cream cheese.",
+      "price": 420,
+      "image": "/images/bakery-selection.webp",
+      "featured": false,
+      "available": true
+    },
+    {
+      "id": "oreo-brownie",
+      "name": "Fruit and nut oreo brownie",
+      "category": "Brownies",
+      "collection": "Brownies",
+      "description": "Oreo, fruit and nuts packed into a generous chocolate square.",
+      "price": 460,
+      "image": "/images/bakery-selection.webp",
+      "featured": false,
+      "available": true
+    },
+    {
+      "id": "monster-brownie",
+      "name": "Monster brownie",
+      "category": "Brownies",
+      "collection": "Brownies",
+      "description": "Our most playful brownie, piled with chocolatey treats.",
+      "price": 500,
+      "image": "/images/bakery-selection.webp",
+      "featured": false,
+      "available": true
+    },
+    {
+      "id": "sizzler-brownie",
+      "name": "Instant sizzler brownie",
+      "category": "Brownies",
+      "collection": "Brownies",
+      "description": "Rich brownie made for warming and serving with your favourite scoop.",
+      "price": 450,
+      "image": "/images/bakery-selection.webp",
+      "featured": false,
+      "available": true
+    },
+    {
+      "id": "coconut-brownie",
+      "name": "Coconut brownie",
+      "category": "Brownies",
+      "collection": "Brownies",
+      "description": "Dark chocolate and soft coconut in a fragrant fudgy square.",
+      "price": 400,
+      "image": "/images/bakery-selection.webp",
+      "featured": false,
+      "available": true
+    },
+    {
+      "id": "triple-chocolate-brownie",
+      "name": "Chocolate triple overload brownie",
+      "category": "Brownies",
+      "collection": "Brownies",
+      "description": "Three layers of chocolate pleasure in one indulgent brownie.",
+      "price": 480,
+      "image": "/images/bakery-selection.webp",
+      "featured": false,
+      "available": true
+    },
+    {
+      "id": "healthy-brownie",
+      "name": "Healthy brownie",
+      "category": "Brownies",
+      "collection": "Brownies",
+      "description": "A thoughtfully balanced brownie with a deep cocoa flavour.",
+      "price": 440,
+      "image": "/images/bakery-selection.webp",
+      "featured": false,
+      "available": true
+    }
+  ],
+  "settings": {
+    "banner": "Handcrafted in Bangalore. Made for your sweetest moments.",
+    "columns": 4
+  },
+  "categories": [
+    "Sponge cakes",
+    "Cheesecakes",
+    "Mithai cakes",
+    "Brownies",
+    "Blondies"
+  ]
+}

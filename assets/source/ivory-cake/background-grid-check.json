@@ -1,0 +1,2562 @@
+{
+  "checkedAt": "2026-10-04T01:22:41.080Z",
+  "method": "Full RGB decode with no resizing. Exact coordinates plus a histogram of every decoded pixel; dominant color is the most frequent RGB in the complete frame.",
+  "rows": [
+    {
+      "theme": "dark",
+      "index": 0,
+      "native": {
+        "file": ".sites-runtime/ivory-preview/renders/dark/000.png",
+        "width": 3840,
+        "height": 2160,
+        "pixels": [
+          {
+            "name": "topLeft",
+            "x": 0,
+            "y": 0,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          },
+          {
+            "name": "topRight",
+            "x": 3839,
+            "y": 0,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          },
+          {
+            "name": "bottomLeft",
+            "x": 0,
+            "y": 2159,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          },
+          {
+            "name": "bottomRight",
+            "x": 3839,
+            "y": 2159,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          },
+          {
+            "name": "leftMidEdge",
+            "x": 0,
+            "y": 1080,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          },
+          {
+            "name": "leftEighthMid",
+            "x": 480,
+            "y": 1080,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          },
+          {
+            "name": "leftQuarterTopEighth",
+            "x": 960,
+            "y": 270,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          },
+          {
+            "name": "topMidEdge",
+            "x": 1920,
+            "y": 0,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          }
+        ],
+        "dominant": {
+          "rgb": [
+            24,
+            17,
+            14
+          ],
+          "hex": "#18110e",
+          "pixelCount": 6960572,
+          "percentageOfWholeFrame": 83.9189
+        }
+      },
+      "variants": [
+        {
+          "file": "public/images/ivory-cake/dark/1280/000.webp",
+          "width": 1280,
+          "height": 720,
+          "pixels": [
+            {
+              "name": "topLeft",
+              "x": 0,
+              "y": 0,
+              "rgb": [
+                22,
+                18,
+                15
+              ],
+              "hex": "#16120f"
+            },
+            {
+              "name": "topRight",
+              "x": 1279,
+              "y": 0,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "bottomLeft",
+              "x": 0,
+              "y": 719,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "bottomRight",
+              "x": 1279,
+              "y": 719,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftMidEdge",
+              "x": 0,
+              "y": 360,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftEighthMid",
+              "x": 160,
+              "y": 360,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftQuarterTopEighth",
+              "x": 320,
+              "y": 90,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "topMidEdge",
+              "x": 640,
+              "y": 0,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            }
+          ],
+          "dominant": {
+            "rgb": [
+              23,
+              17,
+              15
+            ],
+            "hex": "#17110f",
+            "pixelCount": 764154,
+            "percentageOfWholeFrame": 82.916
+          }
+        },
+        {
+          "file": "public/images/ivory-cake/dark/2560/000.webp",
+          "width": 2560,
+          "height": 1440,
+          "pixels": [
+            {
+              "name": "topLeft",
+              "x": 0,
+              "y": 0,
+              "rgb": [
+                27,
+                15,
+                15
+              ],
+              "hex": "#1b0f0f"
+            },
+            {
+              "name": "topRight",
+              "x": 2559,
+              "y": 0,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "bottomLeft",
+              "x": 0,
+              "y": 1439,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "bottomRight",
+              "x": 2559,
+              "y": 1439,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftMidEdge",
+              "x": 0,
+              "y": 720,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftEighthMid",
+              "x": 320,
+              "y": 720,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftQuarterTopEighth",
+              "x": 640,
+              "y": 180,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "topMidEdge",
+              "x": 1280,
+              "y": 0,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            }
+          ],
+          "dominant": {
+            "rgb": [
+              23,
+              17,
+              15
+            ],
+            "hex": "#17110f",
+            "pixelCount": 3075165,
+            "percentageOfWholeFrame": 83.4192
+          }
+        },
+        {
+          "file": "public/images/ivory-cake/dark/3840/000.webp",
+          "width": 3840,
+          "height": 2160,
+          "pixels": [
+            {
+              "name": "topLeft",
+              "x": 0,
+              "y": 0,
+              "rgb": [
+                27,
+                15,
+                15
+              ],
+              "hex": "#1b0f0f"
+            },
+            {
+              "name": "topRight",
+              "x": 3839,
+              "y": 0,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "bottomLeft",
+              "x": 0,
+              "y": 2159,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "bottomRight",
+              "x": 3839,
+              "y": 2159,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftMidEdge",
+              "x": 0,
+              "y": 1080,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftEighthMid",
+              "x": 480,
+              "y": 1080,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftQuarterTopEighth",
+              "x": 960,
+              "y": 270,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "topMidEdge",
+              "x": 1920,
+              "y": 0,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            }
+          ],
+          "dominant": {
+            "rgb": [
+              23,
+              17,
+              15
+            ],
+            "hex": "#17110f",
+            "pixelCount": 6933359,
+            "percentageOfWholeFrame": 83.5908
+          }
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "index": 45,
+      "native": {
+        "file": ".sites-runtime/ivory-preview/renders/dark/045.png",
+        "width": 3840,
+        "height": 2160,
+        "pixels": [
+          {
+            "name": "topLeft",
+            "x": 0,
+            "y": 0,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          },
+          {
+            "name": "topRight",
+            "x": 3839,
+            "y": 0,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          },
+          {
+            "name": "bottomLeft",
+            "x": 0,
+            "y": 2159,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          },
+          {
+            "name": "bottomRight",
+            "x": 3839,
+            "y": 2159,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          },
+          {
+            "name": "leftMidEdge",
+            "x": 0,
+            "y": 1080,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          },
+          {
+            "name": "leftEighthMid",
+            "x": 480,
+            "y": 1080,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          },
+          {
+            "name": "leftQuarterTopEighth",
+            "x": 960,
+            "y": 270,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          },
+          {
+            "name": "topMidEdge",
+            "x": 1920,
+            "y": 0,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          }
+        ],
+        "dominant": {
+          "rgb": [
+            24,
+            17,
+            14
+          ],
+          "hex": "#18110e",
+          "pixelCount": 7129060,
+          "percentageOfWholeFrame": 85.9503
+        }
+      },
+      "variants": [
+        {
+          "file": "public/images/ivory-cake/dark/1280/045.webp",
+          "width": 1280,
+          "height": 720,
+          "pixels": [
+            {
+              "name": "topLeft",
+              "x": 0,
+              "y": 0,
+              "rgb": [
+                22,
+                18,
+                15
+              ],
+              "hex": "#16120f"
+            },
+            {
+              "name": "topRight",
+              "x": 1279,
+              "y": 0,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "bottomLeft",
+              "x": 0,
+              "y": 719,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "bottomRight",
+              "x": 1279,
+              "y": 719,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftMidEdge",
+              "x": 0,
+              "y": 360,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftEighthMid",
+              "x": 160,
+              "y": 360,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftQuarterTopEighth",
+              "x": 320,
+              "y": 90,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "topMidEdge",
+              "x": 640,
+              "y": 0,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            }
+          ],
+          "dominant": {
+            "rgb": [
+              23,
+              17,
+              15
+            ],
+            "hex": "#17110f",
+            "pixelCount": 778838,
+            "percentageOfWholeFrame": 84.5093
+          }
+        },
+        {
+          "file": "public/images/ivory-cake/dark/2560/045.webp",
+          "width": 2560,
+          "height": 1440,
+          "pixels": [
+            {
+              "name": "topLeft",
+              "x": 0,
+              "y": 0,
+              "rgb": [
+                27,
+                15,
+                15
+              ],
+              "hex": "#1b0f0f"
+            },
+            {
+              "name": "topRight",
+              "x": 2559,
+              "y": 0,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "bottomLeft",
+              "x": 0,
+              "y": 1439,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "bottomRight",
+              "x": 2559,
+              "y": 1439,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftMidEdge",
+              "x": 0,
+              "y": 720,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftEighthMid",
+              "x": 320,
+              "y": 720,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftQuarterTopEighth",
+              "x": 640,
+              "y": 180,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "topMidEdge",
+              "x": 1280,
+              "y": 0,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            }
+          ],
+          "dominant": {
+            "rgb": [
+              23,
+              17,
+              15
+            ],
+            "hex": "#17110f",
+            "pixelCount": 3140986,
+            "percentageOfWholeFrame": 85.2047
+          }
+        },
+        {
+          "file": "public/images/ivory-cake/dark/3840/045.webp",
+          "width": 3840,
+          "height": 2160,
+          "pixels": [
+            {
+              "name": "topLeft",
+              "x": 0,
+              "y": 0,
+              "rgb": [
+                27,
+                15,
+                15
+              ],
+              "hex": "#1b0f0f"
+            },
+            {
+              "name": "topRight",
+              "x": 3839,
+              "y": 0,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "bottomLeft",
+              "x": 0,
+              "y": 2159,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "bottomRight",
+              "x": 3839,
+              "y": 2159,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftMidEdge",
+              "x": 0,
+              "y": 1080,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftEighthMid",
+              "x": 480,
+              "y": 1080,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftQuarterTopEighth",
+              "x": 960,
+              "y": 270,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "topMidEdge",
+              "x": 1920,
+              "y": 0,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            }
+          ],
+          "dominant": {
+            "rgb": [
+              23,
+              17,
+              15
+            ],
+            "hex": "#17110f",
+            "pixelCount": 7090382,
+            "percentageOfWholeFrame": 85.484
+          }
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "index": 89,
+      "native": {
+        "file": ".sites-runtime/ivory-preview/renders/dark/089.png",
+        "width": 3840,
+        "height": 2160,
+        "pixels": [
+          {
+            "name": "topLeft",
+            "x": 0,
+            "y": 0,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          },
+          {
+            "name": "topRight",
+            "x": 3839,
+            "y": 0,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          },
+          {
+            "name": "bottomLeft",
+            "x": 0,
+            "y": 2159,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          },
+          {
+            "name": "bottomRight",
+            "x": 3839,
+            "y": 2159,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          },
+          {
+            "name": "leftMidEdge",
+            "x": 0,
+            "y": 1080,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          },
+          {
+            "name": "leftEighthMid",
+            "x": 480,
+            "y": 1080,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          },
+          {
+            "name": "leftQuarterTopEighth",
+            "x": 960,
+            "y": 270,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          },
+          {
+            "name": "topMidEdge",
+            "x": 1920,
+            "y": 0,
+            "rgb": [
+              24,
+              17,
+              14
+            ],
+            "hex": "#18110e"
+          }
+        ],
+        "dominant": {
+          "rgb": [
+            24,
+            17,
+            14
+          ],
+          "hex": "#18110e",
+          "pixelCount": 6921310,
+          "percentageOfWholeFrame": 83.4456
+        }
+      },
+      "variants": [
+        {
+          "file": "public/images/ivory-cake/dark/1280/089.webp",
+          "width": 1280,
+          "height": 720,
+          "pixels": [
+            {
+              "name": "topLeft",
+              "x": 0,
+              "y": 0,
+              "rgb": [
+                22,
+                18,
+                15
+              ],
+              "hex": "#16120f"
+            },
+            {
+              "name": "topRight",
+              "x": 1279,
+              "y": 0,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "bottomLeft",
+              "x": 0,
+              "y": 719,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "bottomRight",
+              "x": 1279,
+              "y": 719,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftMidEdge",
+              "x": 0,
+              "y": 360,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftEighthMid",
+              "x": 160,
+              "y": 360,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftQuarterTopEighth",
+              "x": 320,
+              "y": 90,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "topMidEdge",
+              "x": 640,
+              "y": 0,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            }
+          ],
+          "dominant": {
+            "rgb": [
+              23,
+              17,
+              15
+            ],
+            "hex": "#17110f",
+            "pixelCount": 760035,
+            "percentageOfWholeFrame": 82.4691
+          }
+        },
+        {
+          "file": "public/images/ivory-cake/dark/2560/089.webp",
+          "width": 2560,
+          "height": 1440,
+          "pixels": [
+            {
+              "name": "topLeft",
+              "x": 0,
+              "y": 0,
+              "rgb": [
+                27,
+                15,
+                15
+              ],
+              "hex": "#1b0f0f"
+            },
+            {
+              "name": "topRight",
+              "x": 2559,
+              "y": 0,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "bottomLeft",
+              "x": 0,
+              "y": 1439,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "bottomRight",
+              "x": 2559,
+              "y": 1439,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftMidEdge",
+              "x": 0,
+              "y": 720,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftEighthMid",
+              "x": 320,
+              "y": 720,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftQuarterTopEighth",
+              "x": 640,
+              "y": 180,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "topMidEdge",
+              "x": 1280,
+              "y": 0,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            }
+          ],
+          "dominant": {
+            "rgb": [
+              23,
+              17,
+              15
+            ],
+            "hex": "#17110f",
+            "pixelCount": 3057447,
+            "percentageOfWholeFrame": 82.9386
+          }
+        },
+        {
+          "file": "public/images/ivory-cake/dark/3840/089.webp",
+          "width": 3840,
+          "height": 2160,
+          "pixels": [
+            {
+              "name": "topLeft",
+              "x": 0,
+              "y": 0,
+              "rgb": [
+                22,
+                18,
+                15
+              ],
+              "hex": "#16120f"
+            },
+            {
+              "name": "topRight",
+              "x": 3839,
+              "y": 0,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "bottomLeft",
+              "x": 0,
+              "y": 2159,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "bottomRight",
+              "x": 3839,
+              "y": 2159,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftMidEdge",
+              "x": 0,
+              "y": 1080,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftEighthMid",
+              "x": 480,
+              "y": 1080,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "leftQuarterTopEighth",
+              "x": 960,
+              "y": 270,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            },
+            {
+              "name": "topMidEdge",
+              "x": 1920,
+              "y": 0,
+              "rgb": [
+                23,
+                17,
+                15
+              ],
+              "hex": "#17110f"
+            }
+          ],
+          "dominant": {
+            "rgb": [
+              23,
+              17,
+              15
+            ],
+            "hex": "#17110f",
+            "pixelCount": 6893419,
+            "percentageOfWholeFrame": 83.1093
+          }
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "index": 0,
+      "native": {
+        "file": ".sites-runtime/ivory-preview/renders/light/000.png",
+        "width": 3840,
+        "height": 2160,
+        "pixels": [
+          {
+            "name": "topLeft",
+            "x": 0,
+            "y": 0,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          },
+          {
+            "name": "topRight",
+            "x": 3839,
+            "y": 0,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          },
+          {
+            "name": "bottomLeft",
+            "x": 0,
+            "y": 2159,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          },
+          {
+            "name": "bottomRight",
+            "x": 3839,
+            "y": 2159,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          },
+          {
+            "name": "leftMidEdge",
+            "x": 0,
+            "y": 1080,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          },
+          {
+            "name": "leftEighthMid",
+            "x": 480,
+            "y": 1080,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          },
+          {
+            "name": "leftQuarterTopEighth",
+            "x": 960,
+            "y": 270,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          },
+          {
+            "name": "topMidEdge",
+            "x": 1920,
+            "y": 0,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          }
+        ],
+        "dominant": {
+          "rgb": [
+            247,
+            242,
+            233
+          ],
+          "hex": "#f7f2e9",
+          "pixelCount": 6902046,
+          "percentageOfWholeFrame": 83.2133
+        }
+      },
+      "variants": [
+        {
+          "file": "public/images/ivory-cake/light/1280/000.webp",
+          "width": 1280,
+          "height": 720,
+          "pixels": [
+            {
+              "name": "topLeft",
+              "x": 0,
+              "y": 0,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "topRight",
+              "x": 1279,
+              "y": 0,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "bottomLeft",
+              "x": 0,
+              "y": 719,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "bottomRight",
+              "x": 1279,
+              "y": 719,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftMidEdge",
+              "x": 0,
+              "y": 360,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftEighthMid",
+              "x": 160,
+              "y": 360,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftQuarterTopEighth",
+              "x": 320,
+              "y": 90,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "topMidEdge",
+              "x": 640,
+              "y": 0,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            }
+          ],
+          "dominant": {
+            "rgb": [
+              247,
+              242,
+              232
+            ],
+            "hex": "#f7f2e8",
+            "pixelCount": 756983,
+            "percentageOfWholeFrame": 82.1379
+          }
+        },
+        {
+          "file": "public/images/ivory-cake/light/2560/000.webp",
+          "width": 2560,
+          "height": 1440,
+          "pixels": [
+            {
+              "name": "topLeft",
+              "x": 0,
+              "y": 0,
+              "rgb": [
+                250,
+                240,
+                234
+              ],
+              "hex": "#faf0ea"
+            },
+            {
+              "name": "topRight",
+              "x": 2559,
+              "y": 0,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "bottomLeft",
+              "x": 0,
+              "y": 1439,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "bottomRight",
+              "x": 2559,
+              "y": 1439,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftMidEdge",
+              "x": 0,
+              "y": 720,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftEighthMid",
+              "x": 320,
+              "y": 720,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftQuarterTopEighth",
+              "x": 640,
+              "y": 180,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "topMidEdge",
+              "x": 1280,
+              "y": 0,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            }
+          ],
+          "dominant": {
+            "rgb": [
+              247,
+              242,
+              232
+            ],
+            "hex": "#f7f2e8",
+            "pixelCount": 3047652,
+            "percentageOfWholeFrame": 82.6729
+          }
+        },
+        {
+          "file": "public/images/ivory-cake/light/3840/000.webp",
+          "width": 3840,
+          "height": 2160,
+          "pixels": [
+            {
+              "name": "topLeft",
+              "x": 0,
+              "y": 0,
+              "rgb": [
+                250,
+                240,
+                234
+              ],
+              "hex": "#faf0ea"
+            },
+            {
+              "name": "topRight",
+              "x": 3839,
+              "y": 0,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "bottomLeft",
+              "x": 0,
+              "y": 2159,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "bottomRight",
+              "x": 3839,
+              "y": 2159,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftMidEdge",
+              "x": 0,
+              "y": 1080,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftEighthMid",
+              "x": 480,
+              "y": 1080,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftQuarterTopEighth",
+              "x": 960,
+              "y": 270,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "topMidEdge",
+              "x": 1920,
+              "y": 0,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            }
+          ],
+          "dominant": {
+            "rgb": [
+              247,
+              242,
+              232
+            ],
+            "hex": "#f7f2e8",
+            "pixelCount": 6873047,
+            "percentageOfWholeFrame": 82.8637
+          }
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "index": 45,
+      "native": {
+        "file": ".sites-runtime/ivory-preview/renders/light/045.png",
+        "width": 3840,
+        "height": 2160,
+        "pixels": [
+          {
+            "name": "topLeft",
+            "x": 0,
+            "y": 0,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          },
+          {
+            "name": "topRight",
+            "x": 3839,
+            "y": 0,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          },
+          {
+            "name": "bottomLeft",
+            "x": 0,
+            "y": 2159,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          },
+          {
+            "name": "bottomRight",
+            "x": 3839,
+            "y": 2159,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          },
+          {
+            "name": "leftMidEdge",
+            "x": 0,
+            "y": 1080,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          },
+          {
+            "name": "leftEighthMid",
+            "x": 480,
+            "y": 1080,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          },
+          {
+            "name": "leftQuarterTopEighth",
+            "x": 960,
+            "y": 270,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          },
+          {
+            "name": "topMidEdge",
+            "x": 1920,
+            "y": 0,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          }
+        ],
+        "dominant": {
+          "rgb": [
+            247,
+            242,
+            233
+          ],
+          "hex": "#f7f2e9",
+          "pixelCount": 7130688,
+          "percentageOfWholeFrame": 85.9699
+        }
+      },
+      "variants": [
+        {
+          "file": "public/images/ivory-cake/light/1280/045.webp",
+          "width": 1280,
+          "height": 720,
+          "pixels": [
+            {
+              "name": "topLeft",
+              "x": 0,
+              "y": 0,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "topRight",
+              "x": 1279,
+              "y": 0,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "bottomLeft",
+              "x": 0,
+              "y": 719,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "bottomRight",
+              "x": 1279,
+              "y": 719,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftMidEdge",
+              "x": 0,
+              "y": 360,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftEighthMid",
+              "x": 160,
+              "y": 360,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftQuarterTopEighth",
+              "x": 320,
+              "y": 90,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "topMidEdge",
+              "x": 640,
+              "y": 0,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            }
+          ],
+          "dominant": {
+            "rgb": [
+              247,
+              242,
+              232
+            ],
+            "hex": "#f7f2e8",
+            "pixelCount": 777585,
+            "percentageOfWholeFrame": 84.3734
+          }
+        },
+        {
+          "file": "public/images/ivory-cake/light/2560/045.webp",
+          "width": 2560,
+          "height": 1440,
+          "pixels": [
+            {
+              "name": "topLeft",
+              "x": 0,
+              "y": 0,
+              "rgb": [
+                250,
+                240,
+                234
+              ],
+              "hex": "#faf0ea"
+            },
+            {
+              "name": "topRight",
+              "x": 2559,
+              "y": 0,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "bottomLeft",
+              "x": 0,
+              "y": 1439,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "bottomRight",
+              "x": 2559,
+              "y": 1439,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftMidEdge",
+              "x": 0,
+              "y": 720,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftEighthMid",
+              "x": 320,
+              "y": 720,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftQuarterTopEighth",
+              "x": 640,
+              "y": 180,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "topMidEdge",
+              "x": 1280,
+              "y": 0,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            }
+          ],
+          "dominant": {
+            "rgb": [
+              247,
+              242,
+              232
+            ],
+            "hex": "#f7f2e8",
+            "pixelCount": 3140890,
+            "percentageOfWholeFrame": 85.2021
+          }
+        },
+        {
+          "file": "public/images/ivory-cake/light/3840/045.webp",
+          "width": 3840,
+          "height": 2160,
+          "pixels": [
+            {
+              "name": "topLeft",
+              "x": 0,
+              "y": 0,
+              "rgb": [
+                250,
+                240,
+                234
+              ],
+              "hex": "#faf0ea"
+            },
+            {
+              "name": "topRight",
+              "x": 3839,
+              "y": 0,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "bottomLeft",
+              "x": 0,
+              "y": 2159,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "bottomRight",
+              "x": 3839,
+              "y": 2159,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftMidEdge",
+              "x": 0,
+              "y": 1080,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftEighthMid",
+              "x": 480,
+              "y": 1080,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftQuarterTopEighth",
+              "x": 960,
+              "y": 270,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "topMidEdge",
+              "x": 1920,
+              "y": 0,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            }
+          ],
+          "dominant": {
+            "rgb": [
+              247,
+              242,
+              232
+            ],
+            "hex": "#f7f2e8",
+            "pixelCount": 7090164,
+            "percentageOfWholeFrame": 85.4813
+          }
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "index": 89,
+      "native": {
+        "file": ".sites-runtime/ivory-preview/renders/light/089.png",
+        "width": 3840,
+        "height": 2160,
+        "pixels": [
+          {
+            "name": "topLeft",
+            "x": 0,
+            "y": 0,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          },
+          {
+            "name": "topRight",
+            "x": 3839,
+            "y": 0,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          },
+          {
+            "name": "bottomLeft",
+            "x": 0,
+            "y": 2159,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          },
+          {
+            "name": "bottomRight",
+            "x": 3839,
+            "y": 2159,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          },
+          {
+            "name": "leftMidEdge",
+            "x": 0,
+            "y": 1080,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          },
+          {
+            "name": "leftEighthMid",
+            "x": 480,
+            "y": 1080,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          },
+          {
+            "name": "leftQuarterTopEighth",
+            "x": 960,
+            "y": 270,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          },
+          {
+            "name": "topMidEdge",
+            "x": 1920,
+            "y": 0,
+            "rgb": [
+              247,
+              242,
+              233
+            ],
+            "hex": "#f7f2e9"
+          }
+        ],
+        "dominant": {
+          "rgb": [
+            247,
+            242,
+            233
+          ],
+          "hex": "#f7f2e9",
+          "pixelCount": 6921923,
+          "percentageOfWholeFrame": 83.453
+        }
+      },
+      "variants": [
+        {
+          "file": "public/images/ivory-cake/light/1280/089.webp",
+          "width": 1280,
+          "height": 720,
+          "pixels": [
+            {
+              "name": "topLeft",
+              "x": 0,
+              "y": 0,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "topRight",
+              "x": 1279,
+              "y": 0,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "bottomLeft",
+              "x": 0,
+              "y": 719,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "bottomRight",
+              "x": 1279,
+              "y": 719,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftMidEdge",
+              "x": 0,
+              "y": 360,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftEighthMid",
+              "x": 160,
+              "y": 360,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftQuarterTopEighth",
+              "x": 320,
+              "y": 90,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "topMidEdge",
+              "x": 640,
+              "y": 0,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            }
+          ],
+          "dominant": {
+            "rgb": [
+              247,
+              242,
+              232
+            ],
+            "hex": "#f7f2e8",
+            "pixelCount": 758292,
+            "percentageOfWholeFrame": 82.2799
+          }
+        },
+        {
+          "file": "public/images/ivory-cake/light/2560/089.webp",
+          "width": 2560,
+          "height": 1440,
+          "pixels": [
+            {
+              "name": "topLeft",
+              "x": 0,
+              "y": 0,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "topRight",
+              "x": 2559,
+              "y": 0,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "bottomLeft",
+              "x": 0,
+              "y": 1439,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "bottomRight",
+              "x": 2559,
+              "y": 1439,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftMidEdge",
+              "x": 0,
+              "y": 720,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftEighthMid",
+              "x": 320,
+              "y": 720,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftQuarterTopEighth",
+              "x": 640,
+              "y": 180,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "topMidEdge",
+              "x": 1280,
+              "y": 0,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            }
+          ],
+          "dominant": {
+            "rgb": [
+              247,
+              242,
+              232
+            ],
+            "hex": "#f7f2e8",
+            "pixelCount": 3058826,
+            "percentageOfWholeFrame": 82.976
+          }
+        },
+        {
+          "file": "public/images/ivory-cake/light/3840/089.webp",
+          "width": 3840,
+          "height": 2160,
+          "pixels": [
+            {
+              "name": "topLeft",
+              "x": 0,
+              "y": 0,
+              "rgb": [
+                245,
+                243,
+                232
+              ],
+              "hex": "#f5f3e8"
+            },
+            {
+              "name": "topRight",
+              "x": 3839,
+              "y": 0,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "bottomLeft",
+              "x": 0,
+              "y": 2159,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "bottomRight",
+              "x": 3839,
+              "y": 2159,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftMidEdge",
+              "x": 0,
+              "y": 1080,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftEighthMid",
+              "x": 480,
+              "y": 1080,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "leftQuarterTopEighth",
+              "x": 960,
+              "y": 270,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            },
+            {
+              "name": "topMidEdge",
+              "x": 1920,
+              "y": 0,
+              "rgb": [
+                247,
+                242,
+                232
+              ],
+              "hex": "#f7f2e8"
+            }
+          ],
+          "dominant": {
+            "rgb": [
+              247,
+              242,
+              232
+            ],
+            "hex": "#f7f2e8",
+            "pixelCount": 6892484,
+            "percentageOfWholeFrame": 83.098
+          }
+        }
+      ]
+    }
+  ]
+}

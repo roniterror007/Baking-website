@@ -1,0 +1,25 @@
+{
+  "input": {
+    "width": 1440,
+    "height": 600,
+    "visible": 165315
+  },
+  "crop": {
+    "left": 390,
+    "top": 158,
+    "width": 695,
+    "height": 442
+  },
+  "breathingRoom": 43,
+  "output": {
+    "width": 695,
+    "height": 442,
+    "hasAlpha": true,
+    "minAlpha": 0,
+    "maxAlpha": 255,
+    "bytes": 284956,
+    "lossless": true,
+    "visiblePixelsChanged": 0
+  },
+  "provenance": "Own live Three.js render of Poly Haven Strawberry Chocolate Cake (CC0); no official website preview used."
+}
