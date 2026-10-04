@@ -1,10 +1,10 @@
 import { Pool, types, type PoolClient, type QueryResultRow } from "pg";
+import { postgresPoolConfig } from "./postgres-config.ts";
 types.setTypeParser(20, (value) => Number(value));
 let pool: Pool | undefined;
 function connection() {
   if (!process.env.DATABASE_URL) throw new Error("Database is not configured");
-  return pool ??= new Pool({ connectionString: process.env.DATABASE_URL, max: 2,
-    idleTimeoutMillis: 10000, connectionTimeoutMillis: 10000, query_timeout: 15000 });
+  return pool ??= new Pool(postgresPoolConfig(process.env.DATABASE_URL, process.env.SUPABASE_DB_CA_CERT));
 }
 
 // Translate only server-authored queries; customer values remain bound parameters.

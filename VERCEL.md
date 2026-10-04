@@ -64,3 +64,11 @@ The Vercel deployment is prepared for stateless handlers and bounded pooled conn
 Register and verify `ronittd2005@gmail.com` for owner access. Set its password privately; do not paste it into a SQL migration, environment variable, GitHub or source file. `/sign-in` supports password sign-in, explicit account registration and an email-link fallback for existing accounts. Brownies/blondies are always eggless. Guests can browse but must create an account/sign in before adding to the bag or placing requests.
 
 Owner CMS changes persist in PostgreSQL and are reflected by the storefront's catalog refresh. No GitHub redeployment is needed for pricing, availability, collections, banner text or product-grid column changes.
+
+### Database certificate trust
+
+If Vercel logs `SELF_SIGNED_CERT_IN_CHAIN`, download the server root certificate from your Supabase project's **Database Settings -> SSL Configuration -> Download certificate**. Open the downloaded `.crt` file in a text editor and copy its entire PEM content, including `-----BEGIN CERTIFICATE-----` and `-----END CERTIFICATE-----`. Add it to Vercel as `SUPABASE_DB_CA_CERT` for Production and Preview, save and redeploy. This is a public certificate, not a password or a private key.
+
+The database adapter explicitly supplies that CA with certificate and hostname verification enabled. It removes URI SSL parameters that would otherwise override pg's SSL options. Keep `sslmode=verify-full` in `DATABASE_URL` for configurations without the explicit CA. Never work around this by disabling certificate verification or setting `NODE_TLS_REJECT_UNAUTHORIZED=0`.
+
+Certificate setup fixes the PostgreSQL connection. Supabase Auth uses a separate HTTPS connection; signup email delivery and owner account provisioning still need to be verified separately.
